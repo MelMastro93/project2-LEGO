@@ -95,3 +95,80 @@ margin: 30px;
     padding-top: 25px;
     font-size: 14px;
 }
+
+
+
+
+
+
+.lego-insiders{
+    width: 100%;
+height: 500px;
+position: relative;
+/* background-image: url(arianna-images/16-LEGO-insiders.webp);
+background-size: cover;
+object-fit: cover; */
+
+}
+.lego-insiders img {
+    /* position: relative; */
+    width: 100%;
+ }
+
+
+ .text-over-lego-insiders {
+    height: fit-content;
+    width: 460px;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+   /* padding: 200px 300px; */
+   transform: translate(120px, 70px);
+
+}
+
+.sub-insiders-h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-insiders-p {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.diventa-socio-button{
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 14px 48px 14px 24px;
+    background: #000;
+    color: #fff;
+    margin: 20px 2;
+    border: none;
+    margin-top: 20px;
+}
+
+.diventa-socio-button svg {
+    filter: invert(100%);
+    position: absolute;
+    transform: translate(12px, 0px);
+
+}
+
+
+.diventa-socio-button:hover{
+
+}
+
+
+
+
+
+
+
+
+
+
