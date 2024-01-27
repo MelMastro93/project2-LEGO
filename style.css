@@ -3,33 +3,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Font-base", sans-serif;
-        /* font-weight: bolder;  */
+    /* font-weight: bolder;  */
 }
 
 @font-face {
-    font-family: "Font-base" ;
+    font-family: "Font-base";
     src: url(fonts/Cera\ Pro\ Light.otf) format("woff");
     src: url(fonts/Cera\ Pro\ Light.otf) format("woff2");
 }
 
 @font-face {
-    font-family: "Font-medium" ;
+    font-family: "Font-medium";
     src: url(fonts/Cera\ Pro\ Medium.otf) format("woff");
     src: url(fonts/Cera\ Pro\ Medium.otf) format("woff2");
 }
 
 @font-face {
-    font-family: "Font-grassetto" ;
+    font-family: "Font-grassetto";
     src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff");
     src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff2");
 }
 
-.background{
-    width: 100%;
+.background {
+    width: 1600px;
     height: 100%;
     background-color: #FFE6E5;
     /* font-weight: bolder; */
 }
+
 .container-compra-ora {
     display: flex;
     justify-content: space-around;
@@ -40,8 +41,9 @@
 }
 
 .header-first-section {
-font-size: 32px;
-margin: 30px;
+    font-size: 32px;
+    margin: 30px;
+    margin-left: 160px;
 }
 
 .flowers-img,
@@ -55,19 +57,21 @@ margin: 30px;
     max-width: 100%;
 }
 
-.description-first-section>h3, 
+.description-first-section>h3,
 .description-first-section>p,
 .description-first-section>a {
     padding-top: 20px;
 }
+
 .description-first-section>h3 {
     padding-top: 16px;
     font-size: 20px;
-   font-weight: bolder;
-   color: black;
+    font-weight: bolder;
+    color: black;
 
 
 }
+
 .description-first-section>a {
     color: black;
     text-decoration: none;
@@ -86,47 +90,177 @@ margin: 30px;
     transform: translate(2px, 6px);
 
 }
+
 .description-first-section>p {
     margin: -8px;
     padding-bottom: 12px;
     line-height: 20px;
-    padding-left: 1px ;
+    padding-left: 1px;
     padding-right: 1px;
     padding-top: 25px;
     font-size: 14px;
 }
 
+.container-compra-ora {
+    margin-left: 160px;
+    margin-right: 160px;
+}
 
 
+/* second section Carosello Set in evidenza */
 
+.description-carosello {
+    width: 15px;
+}
 
+.img-example p {
+    background-color: rgb(255, 207, 0);
+    width: fit-content;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
-.lego-insiders{
-    width: 100%;
-height: 500px;
-position: relative;
-/* background-image: url(arianna-images/16-LEGO-insiders.webp);
-background-size: cover;
-object-fit: cover; */
+.valutation-stars {
+    display: flex;
+    width: 70px;
+    gap: 2px;
 
 }
+
+.slider-set {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+/* CONTAINER DELLE CARDS DEL CAROSELLO !!!! */
+.card-set{
+    width: 290px;
+    height: 495px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.whole-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-example {
+    background-color: #fff;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-img-png {
+align-self: center;
+transition: all .4s ease-in-out;
+width: 90%;
+/* transition-delay: 0.05s; */
+transition-duration: .5s;
+}
+
+.card-img-png:hover {
+    transform: scale(1.115);
+}
+
+.heart {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.slider-set h3 {
+    margin-bottom: 12px;
+}
+.description-carosello{
+    width: 250px;
+    height: 205px;
+    padding: 8px;
+    margin: 8px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.description-carosello button {
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 34, 47) ;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: inherit;
+}
+
+.description-carosello button:hover {
+    color: black;
+    background-color: rgb(255, 255, 255)  ;
+    border: 2px solid rgb(226, 34, 47) ;
+}
+
+.description-carosello p {
+    font-size: 16px;
+
+}
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* icons 8  */
+/* rgb(226, 34, 47)        rosso bottone*/
+
+/* rgb(255, 255, 255)     aggiungi al carrello font color */
+
+/* rgb(248, 248, 248);     background cuoricino blu  */
+
+
+
+
+
+
+
+
+
+
+
+/* third section  Iscriviti a LEGO Insiders*/
+
+.lego-insiders {
+    width: 1600px;
+    height: 500px;
+    position: relative;
+
+}
+
 .lego-insiders img {
-    /* position: relative; */
+    object-fit: contain;
     width: 100%;
- }
+}
 
 
- .text-over-lego-insiders {
+.text-over-lego-insiders {
     height: fit-content;
-    width: 460px;
+    width: 530px;
     position: absolute;
     z-index: 1;
     flex-direction: column;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-   /* padding: 200px 300px; */
-   transform: translate(120px, 70px);
+    /* padding: 200px 300px; */
+    bottom: 170px;
+    left: 140px;
 
 }
 
@@ -140,7 +274,7 @@ object-fit: cover; */
     margin-top: 14px;
 }
 
-.diventa-socio-button{
+.diventa-socio-button {
     font-size: 16px;
     border-radius: 4px;
     padding: 14px 48px 14px 24px;
@@ -155,20 +289,13 @@ object-fit: cover; */
     filter: invert(100%);
     position: absolute;
     transform: translate(12px, 0px);
-
 }
 
+.diventa-socio-button:hover {
+    background-color: #fff;
+    color: black;
 
-.diventa-socio-button:hover{
-
+    svg {
+        filter: invert(0%);
+    }
 }
-
-
-
-
-
-
-
-
-
-
