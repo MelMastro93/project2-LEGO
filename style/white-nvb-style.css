@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: small;
-}
+  
 
 nav {
   z-index: 1000;
+  font-family: Arial, sans-serif;
+}
 }
 
 .white-navbar {
@@ -14,6 +14,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 55px;
+  font-size: small;
 }
 
 .areaGiochi a {
@@ -47,11 +48,28 @@ nav {
   align-items: center;
 }
 
-.carousel-text {
-  padding: 0px 48px 0px 48px;
+#slides-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 405px;
 }
 
-.carousel-btn {
+#slides-container span {
+  display: none;
+  padding: 16px 8px 16px 8px;
+}
+
+#slides-container span:nth-child(1){
+  display: block;
+}
+
+.slides-link{
+  margin-left: 10px;
+}
+
+.carousel-btn-prev,
+.carousel-btn-next {
   cursor: pointer;
   margin: 0 10px;
   border: none;
