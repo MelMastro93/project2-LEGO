@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.main-container {
+    max-width: 100vw;
+    background-color: rgb(20, 128, 34);
+}
+
+.top-slider-container {
+    padding: 30px 60px 60px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.card {
+    width: 342px;
+    margin-right: 2.1875rem;
+    background-color: red;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 342px;
+    width: 342px;
+    border: 1px solid black;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.stars-container {
+    display: flex;
+    overflow: hidden;
+    height: 15px;
+}
+.stars-container img {
+    width: 15px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    z-index: 2;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+.heart img {
+    height: 22px;
+    width: 22px;
+}
+
+.article-name {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0.3125rem 0px;
+}
+
+.price {
+    margin: 8px 0px;
+}
+
+.addToCart {
+    background-color: orange;
+    color: black;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.novita {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 0.19rem 0.625rem;
+    background-color: rgb(255, 208, 0);
+}
+
+
+
+
+.slogan {
+    max-width: 1600px;
+}
+.second-jumbotron img {
+    width: 100%;
+}
