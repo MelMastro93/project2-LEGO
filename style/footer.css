@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 29, 72, 255);
+    height: 100%;
+}
+
+.footer_a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_h3 {
+    color: white;
+    padding: 0 0 16px 16px;
+}
+
+/* *FOOTER CONTAINER 1 */
+
+.footer_container1 {
+    display: flex;
+    width: 70%;
+    padding-top: 24px;
+}
+
+.footer_containerLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLegoLogo {
+    margin: 10px;
+}
+
+.footerPosition {
+    margin: 10px;
+    width: 68px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(24, 21, 45);
+    border: none;
+    color: white;
+}
+
+.footerPosition svg {
+    width: 12px;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer_column a {
+    margin: 8px;
+}
+
+.footer_li {
+    list-style: none;
+    padding: 8px;
+}
+
+/* *FOOTER CONTAINER 2 */
+
+.footer_container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 64px;
+}
+
+.footer_marketing {
+    padding-right: 120px;
+}
+
+.footer_h3_marketing {
+    color: white;
+    padding-bottom: 16px;
+
+}
+
+.footer_marketing label {
+    display: inline-block;
+    background-color: white;
+    border-radius: 0 6px 6px 0;
+    
+}
+
+.footer_input {
+    height: 36px;
+    text-align: center;
+    margin-right: 0;
+    padding-right: 0;
+    border: 1px solid white;
+}
+
+.footer_button {
+    background-color: rgb(253, 128, 36);
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+
+.footer_social {
+    padding-left: 120px;
+
+}
+
+.footer_h3_social {
+    color: white;
+    padding-bottom: 16px;
+}
+
+.footer_social img {
+    padding-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+/* *FOOTER CONTAINER 3 */
+
+.footer_container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 64px;   
+    width: 70%;
+}
+
+.footer_information {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.footer_copyright {
+    padding-bottom: 24px;
+}
+
+.footer_a_info {
+    text-decoration: none;
+    padding-right: 24px;
+    color: white;
+}
+
+.footer_copyright p {
+    color: white;
+}
