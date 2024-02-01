@@ -22,16 +22,77 @@
   margin-left: 60px;
 }
 
+/*SEARCHBAR*/
+.bodyOpacity {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.9
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.search_btn {
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.search_btn svg {
+  position: relative;
+  top: 2px;
+}
+
+.search_input {
+  display: none;
+  height: 35px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.search_input_animation {
+  display: block;
+}
+
+.search_input_close {
+  display: block;
+}
+
+.close_btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.close_btn svg {
+  position: relative;
+  top: 3px;
+  left: 1px;
+}
+
 .heart-btn {
- background-color: inherit;
- border-style: none;
+  background-color: inherit;
+  border-style: none;
 }
 
-.shop-icon{
- color: black;
- text-decoration: none;
+.shop-icon {
+  color: black;
+  text-decoration: none;
 }
 
-.heart-btn, .shop-icon{
+.heart-btn,
+.shop-icon {
   padding-left: 16px;
 }
