@@ -10,7 +10,6 @@
 .navbar-right {
   display: flex;
   align-items: center;
-
 }
 
 .navigation-links li {
@@ -26,7 +25,7 @@
 /*SEARCHBAR*/
 .bodyOpacity {
   background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.9
+  opacity: 0.9;
 }
 
 .search-bar {
@@ -91,4 +90,16 @@
 .heart-btn,
 .shop-icon {
   padding-left: 16px;
+}
+
+/*HIDDEN NAVBAR*/
+
+.navbar-hidden {
+  display: flex;
+}
+
+.navbar-hidden li {
+  list-style: none;
+  padding: 8px;
+  /* text-decoration-line: underline; */
 }
