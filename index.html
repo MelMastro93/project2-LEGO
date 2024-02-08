@@ -13,7 +13,8 @@
 <body class="">
   <nav class="white-navbar">
     <!-- LEFT -->
-    <section class="white-navbar-left">
+
+    <div class="white-navbar-left">
       <div class="areaGiochi">
         <a href="">
           <svg width="15" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +25,9 @@
           </svg>
           AREA GIOCHI</a>
       </div>
-    </section>
+    </div>
     <!-- CAROSELLO -->
-    <section class="carousel">
+    <div class="carousel">
       <button class="carousel-btn-prev" onclick="prevSlide()">
         <svg width="12" height="28" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
           class="carousel-left-arrow">
@@ -43,10 +44,10 @@
           <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
         </svg>
       </button>
-    </section>
+    </div>
 
     <!-- RIGHT -->
-    <section class="white-navbar-right">
+    <div class="white-navbar-right">
       <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
         class="lego-head">
         <g transform="translate(1 1)" fill-rule="nonzero" fill="none">
@@ -71,12 +72,13 @@
           fill="#00A3DA" />
       </svg>
       <span>Iscriviti al programma LEGO® Insiders</span>
-    </section>
+    </div>
   </nav>
 
   <!-- YELLOW NAVBAR -->
 
   <nav class="yellow-navbar">
+
     <div class="yellow-navbar-left">
       <img src="https://assets.lego.com/logos/v4.5.0/brand-lego.svg" alt="LEGO" width="55" height="55" />
       <!-- <div class="navigation-links"> -->
@@ -128,6 +130,7 @@
         (0)
       </a>
     </div>
+
   </nav>
 
   <!-- HIDDEN NAVBAR -->
@@ -144,7 +147,7 @@
 
     <!-- MENU BUY -->
 
-    <div class="menu-buy">
+    <div class="menu-buy" style="display: none;">
       <ul class="buy_list">
         <li class="navbar-hidden-items">
           <a href=""><span>Set per tema</span></a>
@@ -365,7 +368,7 @@
         </ul>
       </div>
     </div> <!-- MENU DISCOVER -->
-    <div class="menu-discover">
+    <div class="menu-discover" style="display:none">
       <ul class="discover_list">
         <li class="navbar-hidden-items">
           <a href=""><span>I nostri valori</span></a>
@@ -429,7 +432,7 @@
         <li><a href="">LEGO Life Magazine GRATUITO</a></li>
       </ul>
     </div>
-    <div class="menu-help">
+    <div class="menu-help" style="display: none;">
       <ul class="help_list">
         <li><a href="">Verifica stato ordine</a></li>
         <li><a href="">Consegne e resi</a></li>

@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "font-base";
+  src: url(fonts/Cera-Pro-Light.otf);
+}
+
+@font-face {
+  font-family: "font-grassetto";
+  src: url(fonts\Cera-Pro-Medium.otf);
+}
+
+
+
+
 .yellow-navbar {
   display: flex;
   align-items: center;
@@ -13,6 +26,7 @@
   justify-content: space-between;
   width: 15%;
   z-index: 3;
+  margin-right: 850px
 }
 
 .yellow-navbar-right {
@@ -20,11 +34,7 @@
   align-items: center;
 }
 
-/* .navigation-links {
-  display: flex;
-  justify-content: space-between;
-  z-index: 3;
-} */
+
 
 #navigation_btn1,
 #navigation_btn2,
@@ -32,12 +42,22 @@
   width: 100px;
   height: 36px;
   border: none;
-  margin-left: 16px;
+  margin-left: 64px;
   color: black;
   background: inherit;
   z-index: 3;
   cursor: pointer;
+  font-family: font-grassetto;
+  font-weight: 550;
+  font-size: medium;
 }
+
+#navigation_btn1:hover,
+#navigation_btn2:hover,
+#navigation_btn3:hover {
+  text-decoration: underline 2px;
+}
+
 
 /*SEARCHBAR*/
 .bodyOpacity {
@@ -138,6 +158,16 @@
   background-color: rgb(255, 255, 255);
   height: 100%;
 }
+
+/* @keyframes transition {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+} */
 
 .navbar-hidden a {
   color: black;
@@ -267,7 +297,7 @@
 /*MENU DISCOVER*/
 
 .menu-discover {
-  display: none;
+  /* display: none; */
   text-wrap: nowrap;
   margin-right: 10px;
 }
