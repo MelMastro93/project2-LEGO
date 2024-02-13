@@ -1,326 +1,282 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Font-base", sans-serif;
-    /* font-weight: bolder;  */
-}
-
-@font-face {
-    font-family: "Font-base";
-    src: url(fonts/Cera\ Pro\ Light.otf) format("woff");
-    src: url(fonts/Cera\ Pro\ Light.otf) format("woff2");
-}
-
-@font-face {
-    font-family: "Font-medium";
-    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff");
-    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff2");
-}
-
-@font-face {
-    font-family: "Font-grassetto";
-    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff");
-    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff2");
-}
-
 .background {
-    width: 1600px;
-    height: 100%;
-    background-color: #FFE6E5;
-    /* font-weight: bolder; */
+  width: 1600px;
+  height: 100%;
+  background-color: #ffe6e5;
+  /* font-weight: bolder; */
 }
 
 .container-compra-ora {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin: 30px;
-    margin-top: 20px;
-    text-align: center;
-    position: relative;
-
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 30px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
 }
 
 .header-first-section {
-    font-size: 32px;
-    margin-left: 160px;
-    letter-spacing: 0.5px;
-    padding-top: 20px;
+  font-size: 32px;
+  margin-left: 160px;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
 }
 
 .flowers-img,
 .megapolis-img,
 .piantine-img {
-    width: 100%;
+  width: 100%;
 }
 
 .flowers-img {
-    background-size: cover;
-    max-width: 100%;
+  background-size: cover;
+  max-width: 100%;
 }
 
-.description-first-section>h3,
-.description-first-section>p,
-.description-first-section>a {
-    padding-top: 20px;
+.description-first-section > h3,
+.description-first-section > p,
+.description-first-section > a {
+  padding-top: 20px;
 }
 
-.description-first-section>h3 {
-    padding-top: 16px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: black;
-
-
+.description-first-section > h3 {
+  padding-top: 16px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
 }
 
-.description-first-section>a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+.description-first-section > a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.description-first-section>a:hover {
-    text-decoration-line: underline;
+.description-first-section > a:hover {
+  text-decoration-line: underline;
 }
 
-.description-first-section>svg {
-    margin-top: 8px;
-    width: 16px;
-    position: relative;
-    transform: translate(2px, 6px);
-
+.description-first-section > svg {
+  margin-top: 8px;
+  width: 16px;
+  position: relative;
+  transform: translate(2px, 6px);
 }
 
-.description-first-section>p {
-    margin: -8px;
-    padding-bottom: 12px;
-    line-height: 20px;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: 25px;
-    font-size: 14px;
+.description-first-section > p {
+  margin: -8px;
+  padding-bottom: 12px;
+  line-height: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 25px;
+  font-size: 14px;
 }
 
 .container-compra-ora {
-    margin-left: 160px;
-    margin-right: 160px;
-    height: 100%;
+  margin-left: 160px;
+  margin-right: 160px;
+  height: 100%;
 }
 
-
 .container-compra-ora .left-arrow {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background-color: #edd5d4;
-    border-radius: 50%;
-    padding: 8px;
-    cursor:pointer;
-    left: -85px;
-    top: 25%;
-    display: none;
-
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #edd5d4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  left: -85px;
+  top: 25%;
+  display: none;
 }
 
 .container-compra-ora .right-arrow {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    top: 100px;
-    background-color: #edd5d4;
-    border-radius: 50%;
-    padding: 8px;
-    cursor:pointer;
-    left: 1305px;
-    top: 25%;
-    display: none;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 100px;
+  background-color: #edd5d4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  left: 1305px;
+  top: 25%;
+  display: none;
 }
-
 
 /* second section Carosello Set in evidenza */
 
 .description-carosello {
-    width: 15px;
+  width: 15px;
 }
 
 .img-example p {
-    background-color: rgb(255, 207, 0);
-    width: fit-content;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-    margin-left: 10px;
-    margin-bottom:10px;
+  background-color: rgb(255, 207, 0);
+  width: fit-content;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .valutation-stars {
-    display: flex;
-    width: 70px;
-    gap: 2px;
-
+  display: flex;
+  width: 70px;
+  gap: 2px;
 }
 
 /* --------------- SLIDER  -------------- */
 .slider-set {
-    margin-left: 160px;
-    margin-right: 160px;
-    position: relative;
+  margin-left: 160px;
+  margin-right: 160px;
+  position: relative;
 }
 
-.slider-set #slider-right-button{
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    top: 100px;
-    background-color: #edd5d4;
-    border-radius: 50%;
-    padding: 8px;
-    cursor:pointer;
-    left: 1290px;
-    top: 35%;
+.slider-set #slider-right-button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 100px;
+  background-color: #edd5d4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  left: 1290px;
+  top: 35%;
 }
 
 .slider-set #slider-left-button {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background-color: #edd5d4;
-    border-radius: 50%;
-    padding: 8px;
-    cursor:pointer;
-    left: -60px;
-    top: 35%;
-    display: none;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #edd5d4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  left: -60px;
+  top: 35%;
+  display: none;
 }
 
-#slider-left-button:hover, #slider-right-button:hover {
-    border: 1px solid black;
-    background-color: white;
-    filter: invert(100%);
-    
+#slider-left-button:hover,
+#slider-right-button:hover {
+  border: 1px solid black;
+  background-color: white;
+  filter: invert(100%);
 }
-
-
 
 /* CONTAINER DELLE CARDS DEL CAROSELLO !!!! */
-.card-set{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    overflow-x: scroll;
+.card-set {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  overflow-x: scroll;
 }
 
 .whole-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .img-example {
-    background-color: #fff;
-    width: 290px;
-    height: 290px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  background-color: #fff;
+  width: 290px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .card-img-png {
-align-self: center;
-transition: all .4s ease-in-out;
-width: 90%;
-/* transition-delay: 0.05s; */
-transition-duration: .5s;
+  align-self: center;
+  transition: all 0.4s ease-in-out;
+  width: 90%;
+  /* transition-delay: 0.05s; */
+  transition-duration: 0.5s;
 }
 
 .card-img-png:hover {
-    transform: scale(1.115);
+  transform: scale(1.115);
 }
 
 .heart {
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 15px;
-    border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 15px;
+  border-radius: 50%;
 }
 
 .slider-set h3 {
-    margin-bottom: 12px;
-    font-size: 32px;
-    padding-top: 30px;
-    letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
 }
-.description-carosello{
-    width: 250px;
-    height: 205px;
-    padding: 8px;
-    margin: 8px;
-    line-height: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+.description-carosello {
+  width: 250px;
+  height: 205px;
+  padding: 8px;
+  margin: 8px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .description-carosello button {
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(226, 34, 47) ;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    width: inherit;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(226, 34, 47);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: inherit;
 }
 
 .description-carosello button:hover {
-    color: black;
-    background-color: rgb(255, 255, 255)  ;
-    border: 2px solid rgb(226, 34, 47) ;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(226, 34, 47);
 }
 
 .description-carosello p {
-    font-size: 16px;
-
+  font-size: 16px;
 }
 .price {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* CUSTOMIZING THE SCROLLBAR  */
 
-.card-set::-webkit-scrollbar{
-    padding: 15px;
-    height: 6px;
-
+.card-set::-webkit-scrollbar {
+  padding: 15px;
+  height: 6px;
 }
-.card-set::-webkit-scrollbar-track{
-    background-color: rgba(169, 169, 169, 0.515);  
-
+.card-set::-webkit-scrollbar-track {
+  background-color: rgba(169, 169, 169, 0.515);
 }
 
-.card-set::-webkit-scrollbar-thumb{
-    background-color: rgba(37, 37, 37, 0.727) ;   
+.card-set::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 37, 37, 0.727);
 }
 
 .card-set::-webkit-scrollbar-thumb:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .card-set .left-arrow {
-    display:block;
-
+  display: block;
 }
 .card-set .right-arrow {
-    display: block;
+  display: block;
 }
-
-
-
-
 
 /* icons 8  */
 /* rgb(226, 34, 47)        rosso bottone*/
@@ -329,107 +285,99 @@ transition-duration: .5s;
 
 /* rgb(248, 248, 248);     background cuoricino blu  */
 
-
-
-
 /* third section  Iscriviti a LEGO Insiders*/
 
 .lego-insiders {
-    width: 1600px;
-    height: 500px;
-    position: relative;
-    background-color: #FFE6E5;
+  width: 1600px;
+  height: 500px;
+  position: relative;
+  background-color: #ffe6e5;
 }
 
 .lego-insiders img {
-    object-fit: contain;
-    width: 100%;
-    margin-top: 50px;
+  object-fit: contain;
+  width: 100%;
+  margin-top: 50px;
 }
 
-
 .text-over-lego-insiders {
-    height: fit-content;
-    width: 530px;
-    position: absolute;
-    z-index: 1;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    /* padding: 200px 300px; */
-    bottom: 120px;
-    left: 140px;
-
+  height: fit-content;
+  width: 530px;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding: 200px 300px; */
+  bottom: 120px;
+  left: 140px;
 }
 
 .sub-insiders-h2 {
-    font-size: 40px;
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .sub-insiders-p {
-    font-size: 18px;
-    margin-top: 14px;
+  font-size: 18px;
+  margin-top: 14px;
 }
 
 .diventa-socio-button {
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 14px 48px 14px 24px;
-    background: #000;
-    color: #fff;
-    margin: 20px 2;
-    border: none;
-    margin-top: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 14px 48px 14px 24px;
+  background: #000;
+  color: #fff;
+  margin: 20px 2;
+  border: none;
+  margin-top: 20px;
 }
 
 .diventa-socio-button svg {
-    filter: invert(100%);
-    position: absolute;
-    transform: translate(12px, 0px);
+  filter: invert(100%);
+  position: absolute;
+  transform: translate(12px, 0px);
 }
 
 .diventa-socio-button:hover {
-    background-color: #fff;
-    color: black;
+  background-color: #fff;
+  color: black;
 
-    svg {
-        filter: invert(0%);
-    }
+  svg {
+    filter: invert(0%);
+  }
 }
-
 
 /* MEDIA QUERIES  : TABLET*/
 
-@media screen and (max-width: 768px) { 
-    .container-compra-ora::-webkit-scrollbar{
-        padding: 15px;
-        height: 6px;
-    
-    }
-    .container-compra-ora::-webkit-scrollbar-track{
-        background-color: rgba(169, 169, 169, 0.515);  
-    
-    }
-    
-    .container-compra-ora::-webkit-scrollbar-thumb{
-        background-color: rgba(37, 37, 37, 0.727) ;   
-    }
-    
-    .container-compra-ora::-webkit-scrollbar-thumb:hover {
-        background-color: black;
-    }
-    
-    .container-compra-ora{
-        overflow-x: scroll;
-        height: 100%;
-        overflow-y: hidden;
-        margin: 20px;
-    }
-    
-    .left-arrow, .right-arrow  {
-        display: block;
-    }
-    
+@media screen and (max-width: 768px) {
+  .container-compra-ora::-webkit-scrollbar {
+    padding: 15px;
+    height: 6px;
+  }
+  .container-compra-ora::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+  }
+
+  .container-compra-ora::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+  }
+
+  .container-compra-ora::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+  }
+
+  .container-compra-ora {
+    overflow-x: scroll;
+    height: 100%;
+    overflow-y: hidden;
+    margin: 20px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    display: block;
+  }
 }
