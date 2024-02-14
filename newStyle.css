@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dragon_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* -------------BANNER--------------- */
+
+.dragon_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.dragon_image h2 {
+    position: absolute;
+    top: 55px;
+    left: 110px;
+}
+
+.dragon_image span {
+    width: 300px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+}
+
+.dragon_btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.dragon_btn1 svg {
+    padding-left: 10px;
+}
+
+.dragon_btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 210px;
+    padding: 10px;
+    margin-left: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.dragon_btn2 svg {
+    padding-left: 10px;
+}
+
+/*--------------BANNER----------------*/
+
+.dragon_carousel {
+    display: flex;
+    align-items: center;
+    background-color: rgb(246, 132, 42);
+    overflow-x: scroll;
+    padding-bottom: 36px;
+    margin-bottom: 64px
+}
+
+.dragon_h2 {
+    padding-top: 36px;
+    padding-bottom: 24px;
+    padding-left: 26px;
+    background-color: rgb(246, 132, 42);
+}
+
+/* --------------CARD------------------*/
+
+
+.dragon_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.card_img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 385px;
+    height: 385px;
+
+}
+
+.card_img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+}
+
+.card_heart {
+    position: relative;
+    bottom: 170px;
+    right: 320px;
+}
+
+.card_span_news {
+    position: relative;
+    right: 155px;
+    bottom: 35px;
+    padding: 4px 8px 4px 8px;
+    width: fit-content;
+    background-color: rgb(255, 207, 0);
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 35px;
+}
+
+.dragon_card a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 54px;
+}
+
+.dragon_card a:hover {
+    text-decoration: underline;
+}
+
+.card_price {
+    font-weight: 700;
+}
+
+.card_btn {
+    width: 320px;
+    height: 58px;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(127, 19, 27);
+    border: none;
+    border-radius: 6px;
+}
