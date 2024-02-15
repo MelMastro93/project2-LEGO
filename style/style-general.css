@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Font-base";
-  src: url(fonts/Cera\ Pro\ Light.otf) format("woff");
-  src: url(fonts/Cera\ Pro\ Light.otf) format("woff2");
+  src: url(/fonts/Fontspring-DEMO-cerapro-light.otf) format("woff2"),
+       url(/fonts/Fontspring-DEMO-cerapro-light.otf) format("woff");
 }
 
 @font-face {
   font-family: "Font-medium";
-  src: url(fonts/Cera\ Pro\ Medium.otf) format("woff");
-  src: url(fonts/Cera\ Pro\ Medium.otf) format("woff2");
+  src: url(/fonts/Fontspring-DEMO-cerapro-medium.otf) format("woff2"),
+       url(/fonts/Fontspring-DEMO-cerapro-medium.otf) format("woff");
 }
 
 @font-face {
-  font-family: "Font-grassetto";
-  src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff");
-  src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff2");
+  font-family: "Font-bold";
+  src: url(/fonts/Fontspring-DEMO-cerapro-bold.otf) format("woff2"),
+       url(/fonts/Fontspring-DEMO-cerapro-bold.otf) format("woff");
 }
 
 * {
