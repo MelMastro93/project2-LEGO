@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Cera Pro, sans-serif;
+    font-weight: 500;
+    
 }
 
 .footer_mainContainer {
@@ -15,6 +18,7 @@
 .footer_a {
     text-decoration: none;
     color: white;
+    font-size: 12px;
 }
 
 .footer_a:hover {
@@ -23,17 +27,20 @@
 
 .footer_h3 {
     color: white;
-    padding: 0 0 16px 6px;
+    padding: 0 0 22px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    
 }
 
 /* *FOOTER CONTAINER 1 */
 
 .footer_container1 {
     display: flex;
-    width: 65%;
+    width: 60%;
     padding-top: 46px;
     justify-content: space-between;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
 }
 
 .footer_containerLogo {
@@ -44,29 +51,35 @@
 }
 
 .footerLegoLogo {
-    margin: 10px;
-    width: 112px;
-    height: 112px;
+    margin: 8px;
+    width: 76px;
+    height: 76px;
 }
 
 .footerPosition {
     margin: 10px;
-    width: 100px;
-    height: 42px;
+    width: 66px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(24, 21, 45);
     border: none;
     color: white;
+    font-size: 10px;
 }
 
 .footerPosition svg {
-    width: 12px;
+    width: 10px;
 }
 
 .footer_column_container {
     display: flex;
+}
+
+.footer_ul_column {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer_column {
@@ -78,10 +91,24 @@
     padding-left: 5px;
 }
 
+.footer_li_dropdown {
+    list-style: none;
+}
+
+.footer_marketing_mobile {
+    display: none;
+    margin-left: 20px;
+}
+
+.footer_column svg {
+    display: none;
+}
+
 .footer_column a {
     display: block;
     margin: 6px;
     padding-bottom: 12px;
+    
 }
 
 .footer_li {
@@ -95,8 +122,8 @@
 .footer_container2 {
     display: flex;
     justify-content: space-between;
-    width: 65%;
-    padding-top: 64px;
+    width: 60%;
+    padding-top: 32px;
     padding-bottom: 54px;
 }
 
@@ -107,41 +134,41 @@
 .footer_h3_marketing {
     color: white;
     padding-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
 
 }
 
-.footer_marketing label {
+.footer_marketing label ,
+.footer_marketing_mobile label{
     display: inline-block;
     background-color: white;
     border-radius: 0 6px 6px 0;
-    height: 66px;
-    position: relative;
+    height: 40px;
 
 }
 
 .footer_input {
-    height: 62px;
-    width: 220px;
+    height: 26px;
+    width: 136px;
     text-align: center;
-    position: relative;
-    /* margin-right: 0;
-    padding-right: 0; */
-    bottom: 7px;
     border: 1px solid white;
+    font-size: 10px;
 }
 
 .footer_button {
     background-color: rgb(253, 128, 36);
     height: 40px;
-    width: 40px;
+    width: 38px;
     border: none;
     margin-left: 0;
     padding-left: 0;
     border-radius: 0 6px 6px 0;
-    height: 66px;
-    width: 54px;
-    position: relative;
+}
 
+.footer_button svg {
+    width: 10px;
+    height: 12px;
 }
 
 .footer_social {
@@ -152,12 +179,14 @@
 .footer_h3_social {
     color: white;
     padding-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .footer_social svg {
     padding-right: 8px;
-    width: 46px;
-    height: 46px;
+    width: 30px;
+    height: 30px;
 }
 
 /* *FOOTER CONTAINER 3 */
@@ -167,8 +196,8 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    padding-top: 64px;
-    width: 65%;
+    padding-top: 26px;
+    width: 60%;
 }
 
 .footer_information {
@@ -178,14 +207,13 @@
     padding-bottom: 16px;
 }
 
-.footer_copyright {
-    padding-bottom: 24px;
-}
 
 .footer_a_info {
     text-decoration: none;
     padding-right: 24px;
     color: white;
+    font-size: 9px;
+    font-weight: 400;
 
 }
 
@@ -193,99 +221,17 @@
     text-decoration: underline;
 }
 
+.footer_copyright {
+    padding-bottom: 24px;
+}
+
 .footer_copyright p {
     color: white;
+    font-size: 9px;
     
 }
 
-/*media query laptop 1024px*/
 
-@media screen and (max-width: 1024px) {
+    
 
-    .footer_container1 {
-        width: 100%;
-    }
-
-    .footer_containerLogo {
-        margin-left: 40px;
-    }
-
-    .footer_containerLogo img {
-        width: 96px;
-        height: 96px;
-    }
-
-    .footer_containerLogo button {
-        width: 86px;
-        height: 42px;
-    }
-
-
-    .footer_column a {
-        font-size: 16px;
-        padding: 6px;
-    }
-
-    .footer_column h3 {
-        font-size: 16px;
-    }
-
-    .footer_column_container {
-        width: 60%;
-        column-gap: 20px;
-        flex-wrap: wrap;
-        margin-right: 36px;
-    }
-
-    .footer_column {
-        width: 250px;
-        margin-bottom: 80px;
-    }
-
-    .footer_container2 {
-        width: 100%;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    .footer_input {
-        bottom: 4px;
-    }
-
-    .footer_marketing {
-        margin-left: 40px;
-        margin-bottom: 36px;
-    }
-
-    .footer_social {
-        margin-right: 76px;
-    }
-
-    .footer_social svg {
-        width: 40px;
-        height: 40px;
-    }
-
-    .footer_button svg {
-        height: 20px;
-    }
-
-    .footer_container3 {
-        width: 100%;
-        padding-top: 0px;
-    }
-
-    .footer_information,
-    .footer_copyright {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 5px;
-    }
-
-    .footer_copyright p {
-        font-size: 12px;
-    }
-};
-
-/*media query mobile 768px*/
 
