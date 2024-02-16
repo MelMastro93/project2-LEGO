@@ -69,6 +69,7 @@
 
 /*--------------BANNER----------------*/
 
+
 .dragon_carousel {
     display: flex;
     align-items: flex-start;
@@ -77,6 +78,30 @@
     padding-bottom: 36px;
     margin-bottom: 64px
 }
+
+
+.backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    border:none;
+    width: 38px;
+    height:38px;
+    
+    border-radius: 50%;
+    margin-top: 160px;
+    
+
+}
+/* .nextBtn{
+    background-color: rgb(189, 5, 5);
+    border: 1px solid cornflowerblue;
+    width: 38px;
+    height:38px;
+    border-radius: 50%;
+    position: absolute;
+} */
 
 
 .dragon_carousel::-webkit-scrollbar {
