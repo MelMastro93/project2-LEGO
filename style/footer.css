@@ -3,7 +3,6 @@
     padding: 0;
     font-family: Cera Pro, sans-serif;
     font-weight: 500;
-    
 }
 
 .footer_mainContainer {
@@ -30,7 +29,6 @@
     padding: 0 0 22px 6px;
     font-size: 12px;
     font-weight: 700;
-    
 }
 
 /* *FOOTER CONTAINER 1 */
@@ -113,7 +111,6 @@
     margin-bottom: 12px;
 }
 
-
 /* *FOOTER CONTAINER 2 */
 
 .footer_container2 {
@@ -133,7 +130,6 @@
     padding-bottom: 16px;
     font-size: 11px;
     font-weight: 700;
-
 }
 
 .footer_marketing label ,
@@ -142,7 +138,6 @@
     background-color: white;
     border-radius: 0 6px 6px 0;
     height: 40px;
-
 }
 
 .footer_input {
@@ -212,21 +207,16 @@
     color: white;
     font-size: 9px;
     font-weight: 400;
-
 }
 
 .footer_a_info:hover {
     text-decoration: underline;
 }
 
-
-
 .footer_copyright p {
     color: white;
     font-size: 9px;
-    
 }
-
 
 .footer_copyright {
     padding-bottom: 24px;

@@ -23,7 +23,6 @@
     .footerPosition {
         width: 86px;
         height: 40px;
-
     }
 
     .footerPosition p {
@@ -79,7 +78,6 @@
     .footer_button {
         height: 54px;
         width: 50px;
-
     }
 
     .footer_ul_column {
@@ -89,7 +87,6 @@
         margin-top: 12px;
         margin-right: 0px;
         border-top: 1px solid rgb(255, 255, 255);
-
     }
 
     .footer_ul_column div {
@@ -99,7 +96,6 @@
         align-content: center;
         align-items: baseline;
         border-bottom: 1px solid rgb(255, 255, 255);
-
     }
 
     .footer_column {
@@ -145,7 +141,6 @@
     .footer_arrow_transform {
         transform: rotate(270deg);
         transition: transform 0.1s linear 0s;
-
     }
 
     .hideShow {
@@ -208,5 +203,4 @@
     .footer_copyright p {
         line-height: 18px;
     }
-
 }
