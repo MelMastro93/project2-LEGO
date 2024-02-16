@@ -1,6 +1,6 @@
 /*media query laptop 1024px*/
 
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 
     /**FOOTER CONTAINER 1*/
 
@@ -42,7 +42,7 @@
         padding-left: 10px;
     }
 
-    .footer_column_container {
+    .footer_ul_column {
         width: 60%;
         column-gap: 20px;
         flex-wrap: wrap;
