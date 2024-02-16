@@ -78,8 +78,11 @@
     margin-bottom: 64px
 }
 
+
 .dragon_carousel::-webkit-scrollbar {
-   height: 5px;
+    display: flex;
+    justify-content: center;
+    height: 5px;
 }
 
 .dragon_carousel::-webkit-scrollbar-track {
@@ -88,7 +91,8 @@
 
 .dragon_carousel::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 10px
+    border-radius: 10px;
+
 }
 
 .dragon_carousel::-webkit-scrollbar-thumb:hover {
@@ -200,11 +204,11 @@
     font-size: 16px;
     color: white;
     background-color: rgb(127, 19, 27);
-    border: none;
+    border: 2px solid rgb(127, 19, 27);
     border-radius: 6px;
 }
 
 .card_btn:hover {
     background-color: rgb(246, 132, 42);
-    border: rgb(127, 19, 27);
+    border-color: 2px solid rgb(127, 19, 27);
 }
