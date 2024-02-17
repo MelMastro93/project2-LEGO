@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.readAll_main_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.readAll_container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.readAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.readAll_h2 {
+    width: 100%;
+    margin: 20px 20px 20px 0;
+    font-family: Cera Pro,sans-serif;
+}
+
+/**cards*/
+
+.readAll_container_cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.readAll_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.readAll_img {
+    display: flex;
+    justify-content: center;
+}
+
+.readAll_image {
+    width: 300px;
+}
+
+/**description cards*/
+
+.readAll_img_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 16px;
+    font-family: Cera Pro,sans-serif;
+}
+
+.readAll_h3 {
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.readAll_p {
+    line-height: 16px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.readAll_h3_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.readAll_h3_arrow:hover {
+    text-decoration:  0.1rem underline;
+}
+
+
+.readAll_svg_arrow {
+    margin-left: 10px;
+}
+
+/**description site*/
+
+.description_main_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.description_container {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    background-color: #f2f2f2;
+}
+
+.description_container p {
+    margin: 26px;
+    font-family: Cera Pro,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.description_span a {
+    text-decoration: none;
+    color: #006db7;
+}
+
+.description_span a:hover {
+    text-decoration: underline;
+}
