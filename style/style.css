@@ -3,11 +3,13 @@
     padding: 0;
 }
 
+
 .dragon_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background-color: rgb(246, 132, 42);
+    width: 100%;
 }
 
 /* -------------BANNER--------------- */
@@ -48,6 +50,11 @@
     padding-left: 10px;
 }
 
+.dragon_btn1:hover{
+    background-color: white;
+    color: black;
+}
+
 .dragon_btn2 {
     display: flex;
     align-items: center;
@@ -67,41 +74,79 @@
     padding-left: 10px;
 }
 
+.dragon_btn2:hover{
+    background-color: white;
+    color: black;
+}
+
+.dragon_h2{
+    margin-left: 135px;
+}
+
 /*--------------BANNER----------------*/
 
 
 .dragon_carousel {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgb(246, 132, 42);
     overflow-x: scroll;
     padding-bottom: 36px;
     margin-bottom: 64px
+
 }
 
 
-.backBtn{
+.backBtn {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.548);
-    border:none;
+    border: none;
     width: 38px;
-    height:38px;
-    
+    height: 38px;
     border-radius: 50%;
-    margin-top: 160px;
-    
+    padding: 8px;
+    margin-left: 100px ;
+    margin-bottom: 200px;
 
 }
-/* .nextBtn{
-    background-color: rgb(189, 5, 5);
-    border: 1px solid cornflowerblue;
+
+.backBtn:hover{
+    background-color: black;
+    fill: white;
+
+}
+
+
+
+.nextBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    border: none;
     width: 38px;
-    height:38px;
+    height: 38px;
     border-radius: 50%;
-    position: absolute;
-} */
+    padding: 8px;
+    margin-right:100px;
+    margin-bottom: 200px
+
+}
+
+.nextBtn:hover{
+    background-color: black;
+    fill: white;
+
+}
+
+.nextBtn svg{
+    transform: rotate(180deg);
+    color: black;
+}
+
+
 
 
 .dragon_carousel::-webkit-scrollbar {
@@ -116,8 +161,6 @@
 
 .dragon_carousel::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 10px;
-
 }
 
 .dragon_carousel::-webkit-scrollbar-thumb:hover {
@@ -140,6 +183,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 .card_img_container {
@@ -236,4 +280,14 @@
 .card_btn:hover {
     background-color: rgb(246, 132, 42);
     border-color: 2px solid rgb(127, 19, 27);
+}
+
+@media screen and (max-width: 320px){
+   .dragon_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   }
 }
