@@ -67,7 +67,7 @@
     padding-left: 10px;
 }
 
-.dragon_btn1:hover{
+.dragon_btn1:hover {
     background-color: white;
     color: black;
 }
@@ -91,17 +91,19 @@
     padding-left: 10px;
 }
 
-.dragon_btn2:hover{
+.dragon_btn2:hover {
     background-color: white;
     color: black;
 }
 
-.dragon_h2{
-    margin-left: 135px;
-}
 
 /*--------------BANNER----------------*/
 
+.container_dragon_carousel {
+    display: flex;
+    justify-content: center;    
+    width: 95%;
+}
 
 .dragon_carousel {
     display: flex;
@@ -109,12 +111,14 @@
     background-color: rgb(246, 132, 42);
     overflow-x: scroll;
     padding-bottom: 36px;
-    margin-bottom: 64px
-
+    margin-bottom: 64px;
+    position: relative;
+    width: 95%;
 }
 
 
 .backBtn {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,12 +128,12 @@
     height: 38px;
     border-radius: 50%;
     padding: 8px;
-    margin-left: 100px ;
+    margin-right: -20px;
     margin-bottom: 200px;
 
 }
 
-.backBtn:hover{
+.backBtn:hover {
     background-color: black;
     fill: white;
 
@@ -137,7 +141,8 @@
 
 
 
-.nextBtn{
+.nextBtn {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,31 +152,30 @@
     height: 38px;
     border-radius: 50%;
     padding: 8px;
-    margin-right:100px;
+    margin-left: 300px;
     margin-bottom: 200px
-
 }
 
-.nextBtn:hover{
+.nextBtn:hover {
     background-color: black;
     fill: white;
 
 }
 
-.nextBtn svg{
+.nextBtn svg {
     transform: rotate(180deg);
     color: black;
 }
 
 
 .dragon_carousel::-webkit-scrollbar {
-    display: flex;
-    justify-content: center;
-    height: 5px;
+    height:5px;
+    
 }
 
 .dragon_carousel::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.15);
+    width:30%;
 }
 
 .dragon_carousel::-webkit-scrollbar-thumb {
@@ -208,7 +212,7 @@
     background-color: white;
     width: 385px;
     height: 385px;
-
+    
 }
 
 .card_img:hover {
@@ -296,13 +300,23 @@
     background-color: rgb(246, 132, 42);
     border-color: 2px solid rgb(127, 19, 27);
 }
+/* smartphone */
+/* @media screen and (min-width:320px) {
+    .dragon_section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-@media screen and (max-width: 320px){
-   .dragon_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    }
+    .dragon_image {
+        display: flex;
+        flex-direction: column;
+    }
 
-   }
+
 }
+/* tablet */
+/* @media screen and (max-width: 768px){
+
+} */ 
