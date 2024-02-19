@@ -5,11 +5,11 @@
 }
 
 
-.background {
+.background-arianna {
     width: 100%;
     height: 100%;
     background-color: #FFE6E5;
-    font-family: 'myFontCera', sans-serif;
+    font-family: 'myFontCeraLight', sans-serif;
     /* font-weight: bolder; */
     display: flex;
     flex-direction: column;
@@ -31,16 +31,10 @@
     margin-top: 20px;
     text-align: center;
     height: 100%;
-    width: 80%;
+    width: 1300px;
     position: relative;
 }
 
-.background {
-    width: 1600px;
-    height: 100%;
-    background-color: #ffe6e5;
-    /* font-weight: bolder; */
-}
 
 .container-compra-ora {
     display: flex;
@@ -53,9 +47,10 @@
 }
 
 .header-first {
-  display: flex;
-  justify-self: flex-start;
-  align-self: flex-start;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+
 }
 
 
@@ -70,6 +65,7 @@
     margin-left: 160px;
     letter-spacing: 0.5px;
     padding-top: 20px;
+    display: flex;
 }
 
 .flowers-img,
@@ -141,30 +137,30 @@
 }
 
 .container-compra-ora .left-arrow {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  background-color: #edd5d4;
-  border-radius: 50%;
-  padding: 8px;
-  cursor: pointer;
-  left: -85px;
-  top: 25%;
-  display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    left: -85px;
+    top: 25%;
+    display: none;
 }
 
 .container-compra-ora .right-arrow {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 100px;
-  background-color: #edd5d4;
-  border-radius: 50%;
-  padding: 8px;
-  cursor: pointer;
-  left: 1305px;
-  top: 25%;
-  display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 100px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    left: 1305px;
+    top: 25%;
+    display: none;
 }
 
 /* second section Carosello Set in evidenza */
@@ -238,7 +234,7 @@
     border-radius: 50%;
     padding: 8px;
     cursor: pointer;
-    left: 1290px;
+    left: 1450px;
     top: 35%;
 }
 
@@ -267,24 +263,24 @@
 
 /* CONTAINER DELLE CARDS DEL CAROSELLO !!!! */
 .card-set {
-    width: 100%;
-    height: 100%;
+
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 35px;
     overflow-x: scroll;
-
 }
 
-.whole-card {
+.whole-card {  
+   
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.img-example {
+.img-example {   width: 290px;
+    height: 290px;
     background-color: #fff;
-    width: 330px;
-    height: 330px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -299,7 +295,6 @@
     transition-duration: .5s;
     background-color: #fff;
     width: 290px;
-    height: 290px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -402,12 +397,12 @@
 /* CUSTOMIZING THE SCROLLBAR  */
 
 .card-set::-webkit-scrollbar {
-  padding: 15px;
-  height: 6px;
+    padding: 15px;
+    height: 6px;
 }
 
 .card-set::-webkit-scrollbar-track {
-  background-color: rgba(169, 169, 169, 0.515);
+    background-color: rgba(169, 169, 169, 0.515);
 
 }
 
@@ -430,7 +425,7 @@
 }
 
 .card-set .left-arrow {
-  display: block;
+    display: block;
 }
 
 .card-set .right-arrow {
@@ -454,14 +449,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1600px;
-    height: 500px;
     position: relative;
     background-color: #ffe6e5;
 }
 
 .lego-insiders img {
-    object-fit: contain;
     width: 100%;
     margin-top: 50px;
 }
@@ -472,16 +464,15 @@
     height: 30%;
     position: absolute;
     z-index: 1;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+
     align-items: flex-start;
     justify-content: center;
     /* padding: 200px 300px; */
     bottom: 120px;
     left: 120px;
-    /* padding: 200px 300px; */
-    bottom: 120px;
-    left: 140px;
+
 }
 
 .sub-insiders-h2 {
@@ -523,36 +514,36 @@
 /* MEDIA QUERIES  : TABLET*/
 
 @media screen and (max-width: 768px) {
-  .container-compra-ora::-webkit-scrollbar {
-    padding: 15px;
-    height: 6px;
+    .container-compra-ora::-webkit-scrollbar {
+        padding: 15px;
+        height: 6px;
 
-  }
+    }
 
-  .container-compra-ora::-webkit-scrollbar-track {
-    background-color: rgba(169, 169, 169, 0.515);
+    .container-compra-ora::-webkit-scrollbar-track {
+        background-color: rgba(169, 169, 169, 0.515);
 
-  }
+    }
 
-  .container-compra-ora::-webkit-scrollbar-thumb {
-    background-color: rgba(37, 37, 37, 0.727);
-  }
+    .container-compra-ora::-webkit-scrollbar-thumb {
+        background-color: rgba(37, 37, 37, 0.727);
+    }
 
-  .container-compra-ora::-webkit-scrollbar-thumb:hover {
-    background-color: black;
-  }
+    .container-compra-ora::-webkit-scrollbar-thumb:hover {
+        background-color: black;
+    }
 
-  .container-compra-ora {
-    overflow-x: scroll;
-    height: 100%;
-    overflow-y: hidden;
-    margin: 20px;
-  }
+    .container-compra-ora {
+        overflow-x: scroll;
+        height: 100%;
+        overflow-y: hidden;
+        margin: 20px;
+    }
 
-  .left-arrow,
-  .right-arrow {
-    display: block;
-  }
+    .left-arrow,
+    .right-arrow {
+        display: block;
+    }
 
 }
 
@@ -561,12 +552,12 @@
 /* MEDIA QUERIES  : PHONE*/
 
 @media screen and (max-width: 375px) {
-  .background {
-    width: 100%;
-    height: 100%;
-  }
+    .background {
+        width: 100%;
+        height: 100%;
+    }
 
-  /* .flowers,
+    /* .flowers,
 .megapolis,
 .piantine {
     width: max-content;
@@ -600,5 +591,4 @@
     .right-arrow {
         display: block;
     }
-
 }
