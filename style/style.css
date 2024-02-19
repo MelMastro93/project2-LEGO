@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Font-base";
+    src: url(fonts/Cera\ Pro\ Light.otf) format("woff");
+    src: url(fonts/Cera\ Pro\ Light.otf) format("woff2");
+}
+
+@font-face {
+    font-family: "Font-medium";
+    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff");
+    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff2");
+}
+
+@font-face {
+    font-family: "Font-grassetto";
+    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff");
+    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff2");
+}
 
 .dragon_section {
     display: flex;
