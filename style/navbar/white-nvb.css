@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'myFontCeraLight';
   src: url(/fonts/ceralight.otf) format('woff') ;
@@ -10,12 +11,9 @@
   font-family: "myFontCeraLight", sans-serif;
 }
 
-
-
 nav {
   font-family: Arial, sans-serif;
 }
-
 
 .white-navbar {
   display: flex;
@@ -98,12 +96,12 @@ nav {
 }
 
 .lego-head {
-  padding: 0px 16px 0px 0px;
+  padding: 0px 4px 0px 0px;
   cursor: pointer;
 }
 
 .placeholder-lego {
-  padding: 0px 16px 0px 0px;
+  padding: 0px 4px 0px 0px;
   cursor: pointer;
 }
 
