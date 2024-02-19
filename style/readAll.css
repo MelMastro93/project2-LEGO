@@ -27,55 +27,12 @@
 
 /*?buttons*/
 
-.readAll .slide_button {
-    position: absolute;
-    top: 35%;
-    height: 40px;
-    width: 40px;
-    color: #fde9e9;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    transform: translateY(-50%);
-    display: none;
-}
-
-.readAll .slide_button:hover {
-    background:#444;
-}
-
-.readAll .slide_button#prev-slide {
-    left: 20px;
-}
-
-.readAll .slide_button#next-slide {
-    right: 20px;
-}
-
-.readAll_h2 {
-    width: 100%;
-    margin: 20px 20px 20px 0px;
-    font-family: Cera Pro, sans-serif;
-}
-
-.readAll_buttonLeft_svg {
-    margin-left: 10px;
-    margin-top: 3px;
-}
-
-.readAll_buttonRight_svg {
-    margin-top: 3px;
-}
-
 /**cards*/
 
 .readAll_container_cards {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .readAll_card {
     display: flex;
@@ -177,10 +134,6 @@
 
     .readAll {
         overflow-x: scroll;
-    }
-
-    .readAll .slide_button {
-        display: block;
     }
 
     .readAll::-webkit-scrollbar {
