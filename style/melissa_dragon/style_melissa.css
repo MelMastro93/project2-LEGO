@@ -21,16 +21,16 @@
 
 .dragon_image h2 {
     position: absolute;
-    top: 75px;
-    left: 110px;
+    margin-left:100px;
+    font-size:40px;
+    margin-top: 130px;
 }
 
 .dragon_image span {
-    width: 400px;
+    width: 450px;
     position: absolute;
-    top: 105px;
-    left: 110px;
-    
+    left: 100px;
+    margin-top: 220px;
 }
 
 .dragon_btn1 {
@@ -38,13 +38,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 150px;
-    margin-left: 98px;
+    margin-left:95px;
     padding: 10px;
+    border-radius: 3px;
+    margin-top: 290px;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 3px;
+   
 }
 
 .dragon_btn1 svg {
@@ -61,14 +62,15 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 150px;
-    left: 210px;
+    border-radius: 3px;
+    margin-top: 290px;
+    left: 200px;
     padding: 10px;
     margin-left: 35px;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 3px;
+   
 }
 
 .dragon_btn2 svg {
