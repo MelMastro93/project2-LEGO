@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cera Pro, sans-serif;
+    font-weight: 500;
+}
+
+.footer_mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 29, 72, 255);
+    height: 100%;
+}
+
+.footer_a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer_a:hover {
+    text-decoration-line: underline;
+}
+
+.footer_h3 {
+    color: white;
+    padding: 0 0 22px 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* *FOOTER CONTAINER 1 */
+
+.footer_container1 {
+    display: flex;
+    width: 60%;
+    padding-top: 46px;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.footer_containerLogo {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin-right: 36px;
+}
+
+.footerLegoLogo {
+    margin: 8px;
+    width: 76px;
+    height: 76px;
+}
+
+.footerPosition {
+    margin: 10px;
+    width: 66px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(24, 21, 45);
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.footerPosition svg {
+    width: 10px;
+}
+
+.footer_ul_column {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 20%;
+    margin-right: 40px;
+    padding-left: 5px;
+}
+
+.footer_li_dropdown {
+    list-style: none;
+}
+
+.footer_marketing_mobile {
+    display: none;
+    margin-left: 20px;
+}
+
+.footer_arrow {
+    display: none;
+}
+
+.footer_column a {
+    display: block;
+    margin: 6px;
+    padding-bottom: 12px;
+    
+}
+
+.footer_li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+/* *FOOTER CONTAINER 2 */
+
+.footer_container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 32px;
+    padding-bottom: 54px;
+}
+
+.footer_marketing {
+    padding-right: 120px;
+}
+
+.footer_h3_marketing {
+    color: white;
+    padding-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.footer_marketing label ,
+.footer_marketing_mobile label{
+    display: inline-block;
+    background-color: white;
+    border-radius: 0 6px 6px 0;
+    height: 40px;
+}
+
+.footer_input {
+    height: 26px;
+    width: 136px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 10px;
+}
+
+.footer_button {
+    background-color: rgb(253, 128, 36);
+    height: 40px;
+    width: 38px;
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.footer_button svg {
+    width: 10px;
+    height: 12px;
+}
+
+.footer_social {
+    padding-left: 120px;
+    padding-right: 76px;
+}
+
+.footer_h3_social {
+    color: white;
+    padding-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.footer_social svg {
+    padding-right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* *FOOTER CONTAINER 3 */
+
+.footer_container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 26px;
+    width: 60%;
+}
+
+.footer_information {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+
+.footer_a_info {
+    text-decoration: none;
+    padding-right: 24px;
+    color: white;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.footer_a_info:hover {
+    text-decoration: underline;
+}
+
+.footer_copyright p {
+    color: white;
+    font-size: 9px;
+}
+
+.footer_copyright {
+    padding-bottom: 24px;
+}
