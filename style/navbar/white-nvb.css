@@ -1,18 +1,6 @@
-
-@font-face {
-  font-family: 'myFontCeraLight';
-  src: url(/fonts/ceralight.otf) format('woff') ;
-  src: url(/fonts/ceralight.otf) format('woff2') ;
-}
-
 * {
   margin: 0;
   padding: 0;
-  font-family: "myFontCeraLight", sans-serif;
-}
-
-nav {
-  font-family: Arial, sans-serif;
 }
 
 .white-navbar {
@@ -108,4 +96,41 @@ nav {
 .white-navbar-right span {
   padding: 0px 16px 0px 0px;
   cursor: pointer;
+}
+
+.whiteNvb_close_btn {
+  display: none;
+}
+
+/* -------------------------- MEDIA QUERIES -------------------------------- */
+
+@media screen and (max-width: 1200px) {
+  .white-navbar-right span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .white-navbar {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: small;
+    z-index: 1;
+  }
+
+  .areaGiochi {
+    display: none;
+  }
+
+  .white-navbar-right .lego-head,
+  .white-navbar-right span,
+  .white-navbar-right .placeholder-lego {
+    display: none;
+  }
+
+  .whiteNvb_close_btn {
+    background-color: inherit;
+    border: none;
+  }
 }
