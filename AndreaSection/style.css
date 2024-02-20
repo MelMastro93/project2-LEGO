@@ -1,8 +1,14 @@
+@import url(/AndreaSection/generalss.css);
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    font-family: "Font-base", sans-serif;
+    /* font-weight: bolder;  */
+  }
+  
+
 
 body {
     width: 100vw;
@@ -30,7 +36,7 @@ body {
 }
 
 .carousel {
-    width: 1285px;
+    width: 1380px;
 
     overflow-x:scroll;
 }
@@ -42,7 +48,7 @@ body {
 }
 
 .card {
-    width: 23%;
+    width: calc(25% - 0.1rem);
     margin-right: 2.1875rem;
 }
 
@@ -142,11 +148,25 @@ body {
 
 .slogan {
     position: absolute;
-    top: 30%;
-    left: 8%;
+    top: 32%;
+    left: 6%;
     z-index: 2;
-    
+    font-size: 25px;
+    width: 500px;
+    height: 222px;
+    gap: 20px;
 }
+
+.slogan h4{
+    font-size: 32px;
+}
+
+.slogan p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
 
 .slogan button{
     border: none;
@@ -166,25 +186,31 @@ body {
     display: flex;
     justify-content: center;
     width: 1500px;
+    margin-bottom: 50px;
     
 }
 
 .bot-container {
     width: 1050px;
-    background-color: red;
+
 }
 
+.suggestion {
+    font-size: 25px;
+    margin: 40px 0px 20px;
+}
 
 .bot-slider-container {
     display: flex;
+    align-items: baseline;
     overflow-x: scroll;
     gap: 14px;
 }
 
 .cinema-card {
-    border: 1px solid yellow;
     flex-shrink: 0; 
     width: calc(25% - 10px); 
+    height: 332px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -202,6 +228,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    height: 133px;
+    margin-top: 20px;
     gap: 20px;
+    text-align: center;
+}
+
+.cinema-card-name {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
