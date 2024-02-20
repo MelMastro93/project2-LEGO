@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.dragon_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(246, 132, 42);
+    width: 100%;
+}
+
+/* -------------BANNER--------------- */
+
+.dragon_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.dragon_image h2 {
+    position: absolute;
+    top: 75px;
+    left: 110px;
+}
+
+.dragon_image span {
+    width: 400px;
+    position: absolute;
+    top: 105px;
+    left: 110px;
+    
+}
+
+.dragon_btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    margin-left: 98px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.dragon_btn1 svg {
+    padding-left: 10px;
+}
+
+.dragon_btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.dragon_btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 210px;
+    padding: 10px;
+    margin-left: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.dragon_btn2 svg {
+    padding-left: 10px;
+}
+
+.dragon_btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/*--------------BANNER----------------*/
+.slide_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.container_dragon_carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 95%;
+}
+
+.dragon_carousel {
+    display: flex;
+    align-items: center;
+    background-color: rgb(246, 132, 42);
+    overflow-x: scroll;
+    padding-bottom: 36px;
+    margin-bottom: 64px;
+    width: 95%;
+}
+
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.548);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-top: 150px;
+}
+
+.btn:hover {
+    background-color: black;
+    fill: white;
+
+}
+
+#left {
+    position: absolute;
+    left: 8px;
+}
+
+#right {
+    position: absolute;
+    right: -20px;
+    transform: rotate(180deg);
+    color: black;
+}
+
+
+.dragon_carousel::-webkit-scrollbar {
+    height: 5px;
+
+}
+
+.dragon_carousel::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 30%;
+}
+
+.dragon_carousel::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.dragon_carousel::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.dragon_h2 {
+    padding-top: 36px;
+    padding-bottom: 24px;
+    padding-left: 55px;
+    background-color: rgb(246, 132, 42);
+}
+
+/* --------------CARD------------------*/
+
+
+.dragon_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.card_img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 385px;
+    height: 385px;
+
+}
+
+.card_img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+}
+
+.card_heart {
+    position: relative;
+    bottom: 170px;
+    right: 320px;
+}
+
+.card_span_news {
+    position: relative;
+    right: 155px;
+    bottom: 35px;
+    padding: 4px 8px 4px 8px;
+    width: fit-content;
+    background-color: rgb(255, 207, 0);
+}
+
+.card_span_esclusive {
+    position: relative;
+    right: 145px;
+    bottom: 35px;
+    padding: 4px 8px 4px 8px;
+    width: fit-content;
+    background-color: rgb(255, 207, 0);
+}
+
+.card_span_hardToFind {
+    position: relative;
+    right: 115px;
+    bottom: 35px;
+    padding: 4px 8px 4px 8px;
+    width: fit-content;
+    background-color: rgb(255, 207, 0);
+}
+
+.card_span_empty {
+    margin-bottom: 25px;
+
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 35px;
+}
+
+.dragon_card a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 54px;
+}
+
+.dragon_card a:hover {
+    text-decoration: underline;
+}
+
+.item_description h3 {
+    height: 40px;
+
+}
+
+.card_price {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card_btn {
+    width: 320px;
+    height: 58px;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(127, 19, 27);
+    border: 2px solid rgb(127, 19, 27);
+    border-radius: 6px;
+}
+
+.card_btn:hover {
+    background-color: rgb(246, 132, 42);
+    border-color: 2px solid rgb(127, 19, 27);
+}
+
+ @media only screen and (max-width: 320px) {
+    .dragon_section {
+        width: 100% !important;
+
+    }
+
+} 
