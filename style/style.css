@@ -3,23 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: "Font-base";
-    src: url(fonts/Cera\ Pro\ Light.otf) format("woff");
-    src: url(fonts/Cera\ Pro\ Light.otf) format("woff2");
-}
-
-@font-face {
-    font-family: "Font-medium";
-    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff");
-    src: url(fonts/Cera\ Pro\ Medium.otf) format("woff2");
-}
-
-@font-face {
-    font-family: "Font-grassetto";
-    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff");
-    src: url(fonts/Cera\ Pro\ Bold.ttf) format("woff2");
-}
 
 .dragon_section {
     display: flex;
@@ -38,15 +21,16 @@
 
 .dragon_image h2 {
     position: absolute;
-    top: 55px;
+    top: 75px;
     left: 110px;
 }
 
 .dragon_image span {
-    width: 300px;
+    width: 400px;
     position: absolute;
-    top: 95px;
+    top: 105px;
     left: 110px;
+    
 }
 
 .dragon_btn1 {
@@ -55,7 +39,7 @@
     justify-content: center;
     position: absolute;
     top: 150px;
-    left: 110px;
+    margin-left: 98px;
     padding: 10px;
     background-color: black;
     color: white;
@@ -97,11 +81,18 @@
 }
 
 
+
 /*--------------BANNER----------------*/
+.slide_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
 
 .container_dragon_carousel {
     display: flex;
     justify-content: center;
+    position: relative;
     width: 95%;
 }
 
@@ -112,57 +103,33 @@
     overflow-x: scroll;
     padding-bottom: 36px;
     margin-bottom: 64px;
-    position: relative;
     width: 95%;
 }
 
 
-.backBtn {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn {
     background-color: rgba(0, 0, 0, 0.548);
     border: none;
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    padding: 8px;
-    margin-right: -20px;
-    margin-bottom: 200px;
-
+    margin-top: 150px;
 }
 
-.backBtn:hover {
+.btn:hover {
     background-color: black;
     fill: white;
 
 }
 
-
-
-.nextBtn {
+#left {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.548);
-    border: none;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    padding: 8px;
-    margin-left: 300px;
-    margin-bottom: 200px
+    left: 8px;
 }
 
-.nextBtn:hover {
-    background-color: black;
-    fill: white;
-
-}
-
-.nextBtn svg {
+#right {
+    position: absolute;
+    right: -20px;
     transform: rotate(180deg);
     color: black;
 }
@@ -189,7 +156,7 @@
 .dragon_h2 {
     padding-top: 36px;
     padding-bottom: 24px;
-    padding-left: 26px;
+    padding-left: 55px;
     background-color: rgb(246, 132, 42);
 }
 
@@ -301,10 +268,10 @@
     border-color: 2px solid rgb(127, 19, 27);
 }
 
-@media only screen and (max-width: 320px) {
+ @media only screen and (max-width: 320px) {
     .dragon_section {
-        width: 100% !important; 
-        
+        width: 100% !important;
+
     }
 
-}
+} 
