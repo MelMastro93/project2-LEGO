@@ -171,7 +171,7 @@
   display: none;
   position: relative;
   bottom: 100px;
-  left: 500px;
+  left: 460px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -181,7 +181,7 @@
 
 .navbar-hidden {
   display: none;
-  min-width: 550px;
+  min-width: 650px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -190,17 +190,18 @@
   margin: 0;
   background-color: rgb(255, 255, 255);
   height: 100%;
+  animation: transition 500ms ease;
 }
 
-/* @keyframes transition {
+@keyframes transition {
   0% {
-    transform: translateX(0);
+    left: -650px;
   }
 
   100% {
-    transform: translateX(10px);
+    left: 0;
   }
-} */
+}
 
 .navbar-hidden a {
   color: black;
@@ -219,7 +220,7 @@
 }
 
 .sub-menu {
-  /* display: none; */
+  display: contents;
   overflow-x: auto;
   overflow-y: auto;
   border-left: 1px solid lightgrey;
@@ -267,14 +268,13 @@
 
 .age_list_container {
   display: none;
-  margin: 0 0 0 40px;
-  padding: 0 36px 0 40px;
+  padding: 0 36px 0 10px;
 }
 
 .age_list {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 .price_list_container {
