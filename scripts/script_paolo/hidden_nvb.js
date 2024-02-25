@@ -1,3 +1,4 @@
+/*----------------------------- HIDDEN NAVBAR IDENTIFIER ------------------------------------ */
 const hiddenNvb = document.querySelector(".navbar-hidden");
 const hiddenNvb_close_btn = document.querySelector(".hiddenNvb_close_btn");
 const buyBtn = document.querySelector("#navigation_btn1");
@@ -6,6 +7,17 @@ const helpBtn = document.querySelector("#navigation_btn3");
 const buyPage = document.querySelector(".menu-buy");
 const discoverPage = document.querySelector(".menu-discover");
 const helpPage = document.querySelector(".menu-help");
+
+/*--------------------------------- SUB MENU IDENTIFIER --------------------------------------*/
+const setPerTemaBtn = document.querySelector("#set_per_tema");
+const etaBtn = document.querySelector("#eta");
+const prezziBtn = document.querySelector("#prezzi");
+const merchBtn = document.querySelector("#merch");
+const interessiBtn = document.querySelector("#interessi");
+const pickAndBuildBtn = document.querySelector("#pickAndBuild");
+const subMenu = document.querySelector(".sub-menu");
+const setPerTemaMenu = document.querySelector(".theme_list");
+/*------------------------------- NAVIGATION BUTTONS FUNCTIONS -------------------------------*/
 
 function closeMenu() {
   let showNvb = hiddenNvb.style.display === "flex";
