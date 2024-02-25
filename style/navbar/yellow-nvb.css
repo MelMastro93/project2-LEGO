@@ -13,7 +13,6 @@
   align-items: center;
   width: 30%;
   z-index: 3;
-  margin-right: 850px;
 }
 
 .yellow_navbar_right {
@@ -370,9 +369,6 @@
 
 /* -------------------------MEDIA QUERIES------------------------ */
 @media screen and (max-width: 1324px) {
-  .yellow_navbar_left {
-    margin-right: 580px;
-  }
 }
 
 @media screen and (max-width: 974px) {
@@ -380,10 +376,6 @@
     align-items: end;
     background-color: white;
     border-bottom: 2px solid rgb(255, 207, 0);
-  }
-
-  .yellow_navbar_left {
-    margin-right: 255px;
   }
 
   .yellow_navbar_left button {
@@ -407,7 +399,4 @@
 }
 
 @media screen and (max-width: 580px) {
-  .yellow_navbar_left {
-    margin-right: 70px;
-  }
 }
