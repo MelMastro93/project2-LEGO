@@ -8,7 +8,7 @@ const buyPage = document.querySelector(".menu-buy");
 const discoverPage = document.querySelector(".menu-discover");
 const helpPage = document.querySelector(".menu-help");
 
-/*--------------------------------- SUB MENU IDENTIFIER --------------------------------------*/
+/*--------------------------------- BUY SUB MENU IDENTIFIER --------------------------------------*/
 const setPerTemaBtn = document.querySelector("#set_per_tema");
 const etaBtn = document.querySelector("#eta");
 const prezziBtn = document.querySelector("#prezzi");
@@ -22,6 +22,7 @@ const prezziMenu = document.querySelector(".price_list_container");
 const merchMenu = document.querySelector(".merchandising_list_container");
 const interessiMenu = document.querySelector(".interests_list_container");
 const pickAndBuildMenu = document.querySelector(".pickAndBuild_list_container");
+
 /*------------------------------- NAVIGATION BUTTONS FUNCTIONS -------------------------------*/
 
 function closeMenu() {
