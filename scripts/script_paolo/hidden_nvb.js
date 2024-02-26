@@ -16,7 +16,12 @@ const merchBtn = document.querySelector("#merch");
 const interessiBtn = document.querySelector("#interessi");
 const pickAndBuildBtn = document.querySelector("#pickAndBuild");
 const subMenu = document.querySelector(".sub-menu");
-const setPerTemaMenu = document.querySelector(".theme_list");
+const setPerTemaMenu = document.querySelector(".theme_list_container");
+const etaMenu = document.querySelector(".age_list_container");
+const prezziMenu = document.querySelector(".price_list_container");
+const merchMenu = document.querySelector(".merchandising_list_container");
+const interessiMenu = document.querySelector(".interests_list_container");
+const pickAndBuildMenu = document.querySelector(".pickAndBuild_list_container");
 /*------------------------------- NAVIGATION BUTTONS FUNCTIONS -------------------------------*/
 
 function closeMenu() {
@@ -99,4 +104,159 @@ helpBtn.addEventListener("click", () => {
 
 hiddenNvb_close_btn.addEventListener("click", () => {
   closeMenu();
+});
+
+/*---------------------------------SUB-MENU FUNCTIONS----------------------------------------- */
+
+function openThemeMenu() {
+  let temaMenuDisplay = setPerTemaMenu.style.display === "none";
+
+  if (temaMenuDisplay) {
+    subMenu.style.display = "block";
+    setPerTemaMenu.style.display = "block";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  }
+}
+
+function openAgeMenu() {
+  let ageMenuDisplay = etaMenu.style.display === "none";
+
+  if (ageMenuDisplay) {
+    subMenu.style.display = "block";
+    etaMenu.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  }
+}
+
+function openPriceMenu() {
+  let priceMenuDisplay = prezziMenu.style.display === "none";
+
+  if (priceMenuDisplay) {
+    subMenu.style.display = "block";
+    prezziMenu.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  }
+}
+
+function openMerchMenu() {
+  let merchMenuDisplay = merchMenu.style.display === "none";
+
+  if (merchMenuDisplay) {
+    subMenu.style.display = "block";
+    merchMenu.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  }
+}
+
+function openInterestsMenu() {
+  let interessiMenuDisplay = interessiMenu.style.display === "none";
+
+  if (interessiMenuDisplay) {
+    subMenu.style.display = "block";
+    interessiMenu.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+  }
+}
+
+function openPickMenu() {
+  let pickMenuDisplay = pickAndBuildMenu.style.display === "none";
+
+  if (pickMenuDisplay) {
+    subMenu.style.display = "block";
+    pickAndBuildMenu.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+  }
+}
+
+setPerTemaBtn.addEventListener("click", () => {
+  openThemeMenu();
+});
+
+etaBtn.addEventListener("click", () => {
+  openAgeMenu();
+});
+
+prezziBtn.addEventListener("click", () => {
+  openPriceMenu();
+});
+
+merchBtn.addEventListener("click", () => {
+  openMerchMenu();
+});
+
+interessiBtn.addEventListener("click", () => {
+  openInterestsMenu();
+});
+
+pickAndBuildBtn.addEventListener("click", () => {
+  openPickMenu();
 });
