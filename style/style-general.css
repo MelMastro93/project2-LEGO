@@ -1,31 +1,16 @@
 @font-face {
-  font-family: 'myFontCeraLight';
-  src: url(/fonts/ceralight.otf) format('woff');
-  src: url(/fonts/ceralight.otf) format('woff2');
+  font-family: 'Cera Pro';
+  src: local('Cera Pro Light'), local('Cera-Pro-Light'),
+      url('/fonts/CeraPro-Light.woff2') format('woff2'),
+      url('/fonts/CeraPro-Light.woff') format('woff'),
+      url('/fonts/CeraPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
-
-
-/* @font-face {
-  font-family: "Font-base";
-  src: url(/fonts/Fontspring-DEMO-cerapro-light.otf) format("woff2"),
-    url(/fonts/Fontspring-DEMO-cerapro-light.otf) format("woff");
-}
-
-@font-face {
-  font-family: "Font-medium";
-  src: url(/fonts/Fontspring-DEMO-cerapro-medium.otf) format("woff2"),
-    url(/fonts/Fontspring-DEMO-cerapro-medium.otf) format("woff");
-}
-
-@font-face {
-  font-family: "Font-bold";
-  src: url(/fonts/Fontspring-DEMO-cerapro-bold.otf) format("woff2"),
-    url(/fonts/Fontspring-DEMO-cerapro-bold.otf) format("woff");
-} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'myFontCeraLight';
+  font-family: 'Cera Pro';
 }
