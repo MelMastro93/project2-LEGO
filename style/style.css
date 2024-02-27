@@ -14,6 +14,14 @@
 
 /* -------------BANNER--------------- */
 
+.responsive_dragon {
+    display: none;
+}
+
+.dragon_image_smartphone {
+    display: none;
+}
+
 .dragon_image {
     display: flex;
     flex-direction: column;
@@ -30,7 +38,7 @@
     position: absolute;
     top: 105px;
     left: 110px;
-    
+
 }
 
 .dragon_btn1 {
@@ -83,7 +91,7 @@
 
 
 /*--------------BANNER----------------*/
-.slide_container{
+.slide_container {
     display: flex;
     justify-content: center;
     flex-direction: column
@@ -108,7 +116,7 @@
 
 
 .btn {
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgb(250, 117, 15);
     border: none;
     width: 38px;
     height: 38px;
@@ -268,10 +276,93 @@
     border-color: 2px solid rgb(127, 19, 27);
 }
 
- @media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .dragon_section {
-        width: 100% !important;
+        width: 100%
+    }
+
+    .dragon_banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
-} 
+    .dragon_image h2,
+    span,
+    #left,
+    .dragon_btn2 {
+        display: none;
+    }
+
+    .dragon_image img {
+        display: none;
+    }
+
+    .dragon_image_smartphone {
+        display: initial;
+
+    }
+
+    .dragon_image_smartphone img {
+        width: 100%;
+    }
+
+    .h2_responsive {
+        padding-top: 20px;
+        font-weight: lighter;
+    }
+
+    .span_responsive {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        text-align: center;
+
+    }
+
+    button#left_responsive {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        background-color: black;
+        width: 150px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    button#right_responsive {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        background-color: black;
+        width: 150px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .responsive_dragon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .slide_container {
+        display: flex;
+        width: 100%;
+    }
+
+    .dragon_h2 .h2_drag {
+       margin-left: -22px ;
+    }
+ 
+
+
+}
