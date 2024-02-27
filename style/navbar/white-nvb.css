@@ -35,7 +35,7 @@
 
 /* CAROSELLO */
 
-.carousel {
+.navbar_carousel {
   display: flex;
   align-items: center;
 }
