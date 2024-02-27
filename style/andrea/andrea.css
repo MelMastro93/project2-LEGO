@@ -30,17 +30,49 @@ body {
 .top-slider-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 30px 60px 60px;
     width: 90vw;
     max-width: 1600px;
     margin: 0px auto;
 }
 
+
+
+
 .carousel {
     width: 100%; /* Occupa l'intera larghezza */
     overflow-x: scroll;
     height: auto;
     
+}
+
+.carousel::-webkit-scrollbar {
+    padding: 15px;
+    height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+    padding: 15px;
+    height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background-color: black;
 }
 
 .cards-container {
@@ -74,7 +106,7 @@ body {
     min-height: 280px;
     max-height: 280px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
 }
 
 .card-preview img {
@@ -108,7 +140,7 @@ body {
     font-size: 18px;
 }
 
-.heart {
+.andrea-heart {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,11 +150,11 @@ body {
     top: 10px;
     left: 18px;
     z-index: 2;
-    background-color: lightgrey;
+    background-color: #F8F8F8;
     border-radius: 50%;
 }
 
-.heart img {
+.andrea-heart img {
     height: 22px;
     width: 22px;
 }
@@ -228,21 +260,42 @@ body {
 }
 
 .bot-slider-container::-webkit-scrollbar {
-    bottom: -30px;
-    height: 4px;
-    width: 4px;
-    background: gray;
+    padding: 15px;
+    height: 6px;
 }
 
-.bot-slider-container::-webkit-scrollbar-thumb:horizontal {
-    background: #000;
-    border-radius: 10px;
+.bot-slider-container::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+
 }
+
+.bot-slider-container::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+    padding: 15px;
+    height: 6px;
+}
+
+.bot-slider-container::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+}
+
+.bot-slider-container::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+}
+
+.bot-slider-container::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+
+
+
+
 
 .cinema-card {
     flex-shrink: 0;
     width: calc(25% - 10px);
-    height: 360px;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
