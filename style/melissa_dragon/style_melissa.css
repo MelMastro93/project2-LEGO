@@ -26,33 +26,29 @@
     display: flex;
     flex-direction: column;
 }
-
-.dragon_image h2 {
-    position: absolute;
-    top: 75px;
-    left: 110px;
+.dragon_description_container{
+    position: relative;
+    bottom: 400px;
+    left: 75px;
 }
 
 .dragon_image span {
     width: 400px;
-    position: absolute;
-    top: 105px;
-    left: 110px;
-
 }
 
 .dragon_btn1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 150px;
-    margin-left: 98px;
-    padding: 10px;
+    margin-left: 250px;
+    margin-top: 120px;
+    padding: 15px;
+    width: 170px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 3px;
+    font-size: 20px;
 }
 
 .dragon_btn1 svg {
@@ -68,15 +64,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 150px;
-    left: 210px;
-    padding: 10px;
-    margin-left: 35px;
+    padding: 15px;
+    width: 170px;
+    margin-left: 75px;
+    margin-top: 120px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 3px;
+    font-size: 20px;
 }
 
 .dragon_btn2 svg {
