@@ -2,7 +2,7 @@ const initSliderButton = () => {
     const slideButtons = document.querySelectorAll('.readAll_container_cards .readAll_button');
     const containerSlider = document.querySelector('.readAll_container_cards .readAll_wrapper');
     const maxScrollLeft = containerSlider.scrollWidth - containerSlider.clientWidth;
-    
+
 
     slideButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -20,7 +20,6 @@ const initSliderButton = () => {
     containerSlider.addEventListener('scroll', () => {
         handleSlideButtons()
     })
-
 }
 
 window.addEventListener('load', initSliderButton);
