@@ -23,6 +23,15 @@ const merchMenu = document.querySelector(".merchandising_list_container");
 const interessiMenu = document.querySelector(".interests_list_container");
 const pickAndBuildMenu = document.querySelector(".pickAndBuild_list_container");
 
+/*------------------------------- DISCOVER SUB MENU IDENTIFIER ------------------------------- */
+
+const ourValueBtn = document.querySelector("#ourValue");
+const ourAppBtn = document.querySelector("#ourApp");
+const ourMagazineBtn = document.querySelector("#ourMagazine");
+const ourValueMenu = document.querySelector(".ourValue_list_container");
+const ourAppMenu = document.querySelector(".ourApp_list_container");
+const ourMagazineMenu = document.querySelector(".ourMagazine_list_container");
+
 /*------------------------------- NAVIGATION BUTTONS FUNCTIONS -------------------------------*/
 
 function closeMenu() {
@@ -46,12 +55,30 @@ function openBuyMenu() {
     buyPage.style.display = "block";
     discoverPage.style.display = "none";
     helpPage.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   } else {
     hiddenNvb.style.display = "none";
     hiddenNvb_close_btn.display = "none";
     buyPage.style.display = "none";
     discoverPage.style.display = "none";
     helpPage.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   }
 }
 
@@ -64,12 +91,30 @@ function openDiscoverMenu() {
     buyPage.style.display = "none";
     discoverPage.style.display = "block";
     helpPage.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   } else {
     hiddenNvb.style.display = "none";
     hiddenNvb_close_btn.display = "none";
     buyPage.style.display = "none";
     discoverPage.style.display = "none";
     helpPage.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   }
 }
 
@@ -82,12 +127,30 @@ function openHelpMenu() {
     buyPage.style.display = "none";
     discoverPage.style.display = "none";
     helpPage.style.display = "block";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   } else {
     hiddenNvb.style.display = "none";
     hiddenNvb_close_btn.display = "none";
     buyPage.style.display = "none";
     discoverPage.style.display = "none";
     helpPage.style.display = "none";
+    setPerTemaMenu.style.display = "none";
+    etaMenu.style.display = "none";
+    prezziMenu.style.display = "none";
+    merchMenu.style.display = "none";
+    interessiMenu.style.display = "none";
+    pickAndBuildMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
   }
 }
 
@@ -107,7 +170,7 @@ hiddenNvb_close_btn.addEventListener("click", () => {
   closeMenu();
 });
 
-/*---------------------------------SUB-MENU FUNCTIONS----------------------------------------- */
+/*--------------------------------- BUY SUB-MENU FUNCTIONS ------------------------------------- */
 
 function openThemeMenu() {
   let temaMenuDisplay = setPerTemaMenu.style.display === "none";
@@ -260,4 +323,70 @@ interessiBtn.addEventListener("click", () => {
 
 pickAndBuildBtn.addEventListener("click", () => {
   openPickMenu();
+});
+
+/*------------------------------- DISCOVER SUB MENU FUNCTIONS ------------------------------- */
+
+function openValueMenu() {
+  let ourValueMenuDisplay = ourValueMenu.style.display === "none";
+
+  if (ourValueMenuDisplay) {
+    subMenu.style.display = "block";
+    ourValueMenu.style.display = "block";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
+    buyPage.style.display = "none";
+    helpPage.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
+    buyPage.style.display = "none";
+    helpPage.style.display = "none";
+  }
+}
+
+function openAppMenu() {
+  let ourAppMenuDisplay = ourAppMenu.style.display === "none";
+
+  if (ourAppMenuDisplay) {
+    subMenu.style.display = "block";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "block";
+    ourMagazineMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
+  }
+}
+
+function openMagMenu() {
+  let ourMagazineMenuDisplay = ourMagazineMenu.style.display === "none";
+
+  if (ourMagazineMenuDisplay) {
+    subMenu.style.display = "block";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "block";
+  } else {
+    subMenu.style.display = "none";
+    ourValueMenu.style.display = "none";
+    ourAppMenu.style.display = "none";
+    ourMagazineMenu.style.display = "none";
+  }
+}
+
+ourValueBtn.addEventListener("click", () => {
+  openValueMenu();
+});
+
+ourAppBtn.addEventListener("click", () => {
+  openAppMenu();
+});
+
+ourMagazineBtn.addEventListener("click", () => {
+  openMagMenu();
 });
