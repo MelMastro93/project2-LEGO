@@ -74,7 +74,7 @@
   background: inherit;
   z-index: 3;
   cursor: pointer;
-  font-family: font-grassetto;
+  font-family: font-medium;
   font-weight: 550;
   font-size: medium;
 }
@@ -189,6 +189,7 @@
   margin: 0;
   background-color: rgb(255, 255, 255);
   height: 100%;
+  font-family: font-base;
   animation: transition 500ms ease;
 }
 
@@ -370,7 +371,8 @@
 }
 
 /* -------------------------MEDIA QUERIES------------------------ */
-@media screen and (max-width: 1324px) {}
+@media screen and (max-width: 1324px) {
+}
 
 @media screen and (max-width: 974px) {
   .yellow_navbar {
@@ -379,6 +381,9 @@
     border-bottom: 2px solid rgb(255, 207, 0);
   }
 
+  .yellow_navbar_left {
+    margin-right: 255px;
+  }
   .yellow_navbar_left button {
     display: none;
   }
@@ -399,4 +404,12 @@
   }
 }
 
-@media screen and (max-width: 580px) {}
+@media screen and (max-width: 580px) {
+  .yellow_navbar_left {
+    margin: 0;
+  }
+
+  #slides-container {
+    width: fit-content;
+  }
+}
