@@ -1,12 +1,13 @@
 @font-face {
     font-family: 'myFontCeraLight';
-    src: url(/fonts/Cera-Pro-Light.otf) format('woff');
-    src: url(/fonts/Cera-Pro-Light.otf) format('woff2');
+    src: url(/fonts/ceralight.otf) format('woff');
+    src: url(/fonts/ceralight.otf) format('woff2');
 }
 
 .background-arianna {
     width: 100%;
     height: 100%;
+    font-family: 'myFontCeraLight';
     background-color: #FFE6E5;
     /* font-weight: bolder; */
     display: flex;
