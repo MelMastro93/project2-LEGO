@@ -176,7 +176,6 @@
   cursor: pointer;
   background: inherit;
   border: none;
-  font-family: font-base;
 }
 
 .navbar-hidden {
@@ -190,6 +189,7 @@
   margin: 0;
   background-color: rgb(255, 255, 255);
   height: 100%;
+  font-family: font-base;
   animation: transition 500ms ease;
 }
 

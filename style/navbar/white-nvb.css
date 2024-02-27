@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100%;
   height: 55px;
+  font-family: font-base;
   font-size: small;
   z-index: 1;
 }
@@ -110,9 +111,8 @@
   }
 
   .separator {
-    padding: 0 10px 0 10px
+    padding: 0 10px 0 10px;
   }
-
 }
 
 @media screen and (max-width: 900px) {
