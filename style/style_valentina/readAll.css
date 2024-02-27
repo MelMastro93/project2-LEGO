@@ -140,7 +140,7 @@
 
 .description_container {
     text-align: start;
-    width: 95%;
+    width: 1400px;
     background-color: #f2f2f2;
     /* height: ; */
 }
@@ -150,7 +150,9 @@
     font-family: Cera Pro, sans-serif;
     font-size: 14px;
     line-height: 18px;
+    padding: 3px;
 }
+
 
 .description_span a {
     text-decoration: none;
@@ -159,6 +161,11 @@
 
 .description_span a:hover {
     text-decoration: underline;
+}
+
+.readMore_Less {
+    border: none;
+    color: #006db7;
 }
 
 /*media query*/
@@ -197,6 +204,14 @@
     .readAll_img_description {
         width: 300px;
     }
+
+    .description_span {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
 
     .span_mostrameno {
         display: none;
