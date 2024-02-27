@@ -23,7 +23,8 @@
 
 .readAll_h2 {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: "Font-base";
 }
 
 
@@ -102,7 +103,8 @@
 }
 
 .readAll_h3 {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: "Font-base";
 }
 
 .readAll_p {
@@ -110,6 +112,7 @@
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: "Font-base";
 }
 
 .readAll_h3_arrow {
@@ -118,6 +121,7 @@
     align-items: center;
     width: 100%;
     font-size: 14px;
+    font-family: "Font-medium";
 }
 
 .readAll_h3_arrow:hover {
@@ -147,7 +151,7 @@
 
 .description_container p {
     margin: 26px;
-    font-family: Cera Pro, sans-serif;
+    font-family: "Font-base";
     font-size: 14px;
     line-height: 18px;
     padding: 3px;
@@ -210,5 +214,11 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .readAll_button {
+        opacity: 0;
     }
 }
