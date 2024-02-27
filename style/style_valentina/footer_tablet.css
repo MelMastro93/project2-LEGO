@@ -202,6 +202,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-left: 20px;
+        margin-right: 16px;
     }
 
     .footer_copyright p {
