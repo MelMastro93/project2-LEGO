@@ -24,7 +24,6 @@
 .readAll_h2 {
     margin-bottom: 20px;
     font-size: 20px;
-    font-family: "Font-base";
 }
 
 
@@ -99,12 +98,10 @@
     height: 100%;
     text-align: center;
     margin: 16px;
-    font-family: Cera Pro, sans-serif;
 }
 
 .readAll_h3 {
     font-size: 20px;
-    font-family: "Font-base";
 }
 
 .readAll_p {
@@ -112,7 +109,6 @@
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: "Font-base";
 }
 
 .readAll_h3_arrow {
@@ -121,7 +117,6 @@
     align-items: center;
     width: 100%;
     font-size: 14px;
-    font-family: "Font-medium";
 }
 
 .readAll_h3_arrow:hover {
@@ -151,7 +146,6 @@
 
 .description_container p {
     margin: 26px;
-    font-family: "Font-base";
     font-size: 14px;
     line-height: 18px;
     padding: 3px;
@@ -207,6 +201,11 @@
 
     .readAll_img_description {
         width: 300px;
+    }
+
+    .description_container {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .description_span {

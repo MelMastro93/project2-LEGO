@@ -12,7 +12,6 @@
     color: white;
     font-size: 16px;
     line-height: 26px;
-    font-family: "Font-base"
 }
 
 .footer_a:hover {
@@ -23,7 +22,6 @@
     color: white;
     padding: 0 0 22px 6px;
     font-size: 16px;
-    font-family: "Font-bold";
 }
 
 /* *FOOTER CONTAINER 1 */
@@ -40,7 +38,7 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    margin-right: 36px;
+    margin-right: 46px;
 }
 
 .footerLegoLogo {
@@ -61,7 +59,6 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
-    font-family: "Font-base";
 }
 
 .footerPosition svg {
@@ -125,7 +122,6 @@
     color: white;
     padding-bottom: 16px;
     font-size: 14px;
-    font-family: "Font-medium";
 }
 
 .footer_marketing label,
@@ -168,7 +164,6 @@
     color: white;
     padding-bottom: 16px;
     font-size: 14px;
-    font-family: "Font-medium";
 }
 
 .footer_social svg {
@@ -202,7 +197,6 @@
     padding-right: 24px;
     color: white;
     font-size: 14px;
-    font-family: "Font-base";
 }
 
 .footer_a_info:hover {
@@ -212,7 +206,6 @@
 .footer_copyright p {
     color: white;
     font-size: 14px;
-    font-family: "Font-base";
 }
 
 .footer_copyright {
