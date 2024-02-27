@@ -166,10 +166,6 @@
 
 /*HIDDEN NAVBAR*/
 
-.navbar-hidden li {
-  cursor: pointer;
-}
-
 .hiddenNvb_close_btn {
   display: none;
   position: relative;
@@ -209,11 +205,17 @@
 .navbar-hidden a {
   color: black;
   text-decoration: none;
+  pointer-events: none;
 }
 
 .navbar-hidden li {
   list-style: none;
   padding: 8px;
+  cursor: pointer;
+}
+
+.navbar-hidden li:hover {
+  text-decoration: underline;
 }
 
 .navbar-hidden-items {
@@ -223,7 +225,7 @@
 }
 
 .sub-menu {
-  display: contents;
+  display: block;
   overflow-x: auto;
   overflow-y: auto;
   border-left: 1px solid lightgrey;
@@ -253,6 +255,7 @@
 
 .theme_list_container {
   display: none;
+  position: relative;
   overflow: hidden;
   height: min-content;
   padding: 0 36px 0 40px;
@@ -367,8 +370,7 @@
 }
 
 /* -------------------------MEDIA QUERIES------------------------ */
-@media screen and (max-width: 1324px) {
-}
+@media screen and (max-width: 1324px) {}
 
 @media screen and (max-width: 974px) {
   .yellow_navbar {
@@ -397,5 +399,4 @@
   }
 }
 
-@media screen and (max-width: 580px) {
-}
+@media screen and (max-width: 580px) {}

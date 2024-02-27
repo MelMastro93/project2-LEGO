@@ -3,15 +3,15 @@ const readMoreLess = document.querySelector('.readMore_Less')
 
 readMoreLess.addEventListener('click', () => {
 
-    const span_mostrameno = document.querySelector('.span_mostrameno')
+    const description_span = document.querySelector('.description_span')
 
     if (readMoreLess.innerText === 'Leggi di Più') {
         readMoreLess.innerText = 'Mostra di meno'
-        span_mostrameno.style.display = 'inline'
+        description_span.style.display = 'inline'
 
     } else if(readMoreLess.innerText === 'Mostra di meno') {
         readMoreLess.innerText = 'Leggi di Più'
-        span_mostrameno.style.display = 'none'
+        description_span.style.display = '-webkit-box'
     }
 
 })
