@@ -370,7 +370,8 @@
 }
 
 /* -------------------------MEDIA QUERIES------------------------ */
-@media screen and (max-width: 1324px) {}
+@media screen and (max-width: 1324px) {
+}
 
 @media screen and (max-width: 974px) {
   .yellow_navbar {
@@ -379,6 +380,9 @@
     border-bottom: 2px solid rgb(255, 207, 0);
   }
 
+  .yellow_navbar_left {
+    margin-right: 255px;
+  }
   .yellow_navbar_left button {
     display: none;
   }
@@ -399,4 +403,12 @@
   }
 }
 
-@media screen and (max-width: 580px) {}
+@media screen and (max-width: 580px) {
+  .yellow_navbar_left {
+    margin: 0;
+  }
+
+  #slides-container {
+    width: fit-content;
+  }
+}
