@@ -74,7 +74,7 @@
   background: inherit;
   z-index: 3;
   cursor: pointer;
-  font-family: font-grassetto;
+  font-family: font-medium;
   font-weight: 550;
   font-size: medium;
 }
@@ -176,6 +176,7 @@
   cursor: pointer;
   background: inherit;
   border: none;
+  font-family: font-base;
 }
 
 .navbar-hidden {
