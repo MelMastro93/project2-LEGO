@@ -35,7 +35,7 @@
 
 /* CAROSELLO */
 
-.carousel {
+.navbar_carousel {
   display: flex;
   align-items: center;
 }
@@ -105,7 +105,7 @@
 
 /* -------------------------- MEDIA QUERIES -------------------------------- */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1324px) {
   .whiteNvb_text_element {
     display: none;
   }
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 974px) {
   .white-navbar {
     display: flex;
     align-items: center;
