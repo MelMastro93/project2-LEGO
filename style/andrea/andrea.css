@@ -1,15 +1,4 @@
 /* CSS base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Font-base", sans-serif;
-}
-
-body {
-    width: 100vw;
-    overflow-x: hidden;
-}
 
 .andrea {
     display: flex;
@@ -34,7 +23,7 @@ body {
     padding: 30px 60px 60px;
     width: 90vw;
     max-width: 1600px;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 

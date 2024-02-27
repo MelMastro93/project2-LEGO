@@ -14,3 +14,7 @@
   box-sizing: border-box;
   font-family: 'Cera Pro';
 }
+
+.prova-overflowone {
+  overflow-x: hidden;
+}
