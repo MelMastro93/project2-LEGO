@@ -18,7 +18,7 @@ function changeDisplay() {
     opacity.value = "bodyOpacity";
     closeBtn.style.display = "block";
   } else {
-    leftElements.style.marginRight = "255px";
+    leftElements.style.marginRight = "inherit";
     search_input.style.display = "none";
     opacity.value = "";
     closeBtn.style.display = "none";

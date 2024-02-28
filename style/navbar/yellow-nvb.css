@@ -35,6 +35,8 @@
 }
 
 .burger_menu_Btn_1 {
+  display: flex;
+  flex-direction: column;
   background-color: inherit;
   border: none;
   color: inherit;
@@ -42,17 +44,9 @@
   margin-bottom: 10px;
 }
 
-.burger_menu_Btn_2 {
-  background-color: inherit;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  margin-top: 5px;
-}
-
 .burgerMenuButtonstyles__iconContainer {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: black;
   margin-bottom: 3px;
   border-radius: 3px;
@@ -60,7 +54,7 @@
 
 .burgerMenuButtonstyles__icon {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: black;
   margin-top: 1px;
   border-radius: 3px;
@@ -373,6 +367,157 @@
   margin-right: 10px;
 }
 
+.burger_hiddenMenu_smartphone_container {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  font-family: font-base;
+  animation: transition 500ms ease;
+}
+
+@keyframes transition {
+  0% {
+    left: -350px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.burger_hiddenMenu_Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 52px;
+  border-bottom: 3px solid rgb(255, 207, 0);
+}
+
+.burgerHiddenMenuButton {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: inherit;
+  border: none;
+  font-family: "Cera Pro";
+  font-weight: 700;
+  font-size: large;
+}
+
+.burgerHiddenMenuButtonX {
+  height: 100%;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+  background-color: inherit;
+  border-left: 1px solid rgb(224, 224, 224);
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.burgerMenuAreaGiochi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 39px;
+  margin: 22px;
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  color: black;
+  background: rgb(171, 217, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  border-bottom: 1.6px solid rgba(48, 85, 181, 0.25);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.burgerMenuAreaGiochi a {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.burgerMenuAreaGiochi svg {
+  padding: 5px;
+}
+
+.burger_hiddenMenu_list li:nth-child(5) span,
+.burger_hiddenMenu_list li:nth-child(6) span,
+.burger_hiddenMenu_list li:nth-child(7) span,
+.burger_hiddenMenu_list li:nth-child(8) span,
+.burger_hiddenMenu_list li:nth-child(9) span {
+  margin-left: 20px;
+}
+
+.burger_hiddenMenu_list li:nth-child(1),
+.burger_hiddenMenu_list li:nth-child(2),
+.burger_hiddenMenu_list li:nth-child(3),
+.burger_hiddenMenu_list li:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px 12px 20px;
+  font-weight: bold;
+  pointer-events: none;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+
+}
+
+.burger_hiddenMenu_list li:nth-child(5),
+.burger_hiddenMenu_list li:nth-child(6),
+.burger_hiddenMenu_list li:nth-child(9) {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  padding: 12px 20px 12px 20px;
+}
+
+.burger_hiddenMenu_list li:nth-child(7),
+.burger_hiddenMenu_list li:nth-child(8) {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  padding: 12px 20px 12px 0px;
+}
+
+
+.burger_hiddenMenu_list li:nth-child(2) svg,
+.burger_hiddenMenu_list li:nth-child(3) svg,
+.burger_hiddenMenu_list li:nth-child(4) svg {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+
 /* -------------------------MEDIA QUERIES------------------------ */
 @media screen and (max-width: 1324px) {}
 
@@ -384,11 +529,12 @@
   }
 
   .yellow_navbar_left {
-    margin-right: 255px;
     z-index: 1;
   }
 
-  .yellow_navbar_left button {
+  #navigation_btn1,
+  #navigation_btn2,
+  #navigation_btn3 {
     display: none;
   }
 
