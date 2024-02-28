@@ -1,10 +1,13 @@
 
+.readAll_container_all {
+    background-color: white;
+    height: 100%;
+}
 .readAll_main_container {
     display: flex;
     justify-content: center;
     max-width: 100%;
     margin-bottom: 50px;
-    margin-top: 60px;
 }
 
 .readAll_container {
@@ -19,6 +22,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
+    margin-top: 40px;
 }
 
 .readAll_h2 {
@@ -134,14 +138,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 60px;
+    
 }
 
 .description_container {
     text-align: start;
     width: 1400px;
     background-color: #f2f2f2;
-    /* height: ; */
+    margin-bottom: 60px;
 }
 
 .description_container p {
