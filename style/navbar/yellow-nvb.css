@@ -83,10 +83,6 @@
 }
 
 /*SEARCHBAR*/
-.bodyOpacity {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.9;
-}
 
 .search-bar {
   display: flex;
