@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 120px;
+    bottom: 180px;
     left: 100px;
 
 }
@@ -60,17 +60,18 @@
 }
 
 .dragon_btn1 {
-    padding: 10px;
-    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 15px;
-}
-
-.dragon_btn1 svg {
-    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .dragon_btn1:hover {
@@ -79,20 +80,21 @@
 }
 
 .dragon_btn2 {
-    padding: 10px;
-    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 100px;
+    font-weight: bolder;
 }
 
-.dragon_btn2 svg {
-    padding-left: 10px;
-
-}
 
 .dragon_btn2:hover {
     background-color: white;
@@ -300,8 +302,7 @@
     }
 
     .dragon_image h2,
-    span,
-    #left,
+    .btn,
     .dragon_btn2 {
         display: none;
     }
@@ -319,15 +320,24 @@
         width: 100%;
     }
 
+    .responsive_dragon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
     .h2_responsive {
         padding-top: 20px;
-        font-weight: lighter;
+        font-size: small;
     }
 
     .span_responsive {
         display: flex;
         justify-content: center;
-        padding: 40px;
+        margin-top: 8px;
+        padding: 20px;
         text-align: center;
 
     }
@@ -343,6 +353,7 @@
         border: none;
         padding: 15px;
         margin: 10px;
+        font-weight: bolder;
     }
 
     button#right_responsive {
@@ -356,13 +367,7 @@
         border: none;
         padding: 15px;
         margin: 10px;
-    }
-
-    .responsive_dragon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        font-weight: bolder;
     }
 
     .slide_container {
@@ -370,10 +375,69 @@
         width: 100%;
     }
 
-    .dragon_h2 .h2_drag {
-        margin-left: -22px;
+    .h2_drag{
+        font-size: large;
+        margin-bottom: -12px;
+        margin-left: -7px;
     }
 
+    .dragon_carousel{
+        display:flex;
+        flex-wrap: nowrap;
+        width:100%;
+    }
+    .dragon_card{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .card_img_container{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        width:110%;
+        height:100%;
+    }
+    .card_img_container svg{
+        right: 200px;
+        bottom:90px
+    }
 
+    .card_img{
+        width:100%;
+    }
+    .card_span_news{
+        right: 60px;
+        font-size: small;
+    }
+    .card_span_esclusive{
+        right:55px;
+        font-size: small;
+    }
+    .card_span_hardToFind{
+        right:25px;
+        font-size: small;
+    }
+
+    .item_description h3{
+        font-size: medium;
+    }
+    .card_price{
+        font-weight: bolder ;
+    }
+
+    .card_btn{
+        width: 200px;
+        height: 48px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bolder;
+        color: white;
+        background-color: rgb(127, 19, 27);
+        border: 2px solid rgb(127, 19, 27);
+        border-radius: 6px;
+        
+    }
+    
 
 }
