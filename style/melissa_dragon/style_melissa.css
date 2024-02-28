@@ -389,7 +389,7 @@
     .h2_drag {
         font-size: large;
         margin-bottom: -12px;
-        margin-left: -44px;
+        margin-left: -104px;
     }
     .container_dragon_carousel{
         margin-left:0px;
@@ -475,11 +475,48 @@
         flex-direction: column;
         position: absolute;
         bottom: -8px;
-        left: 100px;
-    
+        left: 66px;
     }
-    
+    .dragon_description_container h2{
+        font-size: 20px;
+        
+    }
+    .span_description{
+        width: 300px;
+        font-size: small;
+    }
+
+    .dragon_btn_container {
+        margin-top:6px;
+        padding-bottom: 45px;
+    }
+ 
+    .dragon_btn1{
+        font-size: 13px;
+        padding: 10px; 
+        width: 130px;
+        bottom: 55px;
+    }
+
+    .dragon_btn2{
+        font-size: 13px;
+        padding: 10px;
+        width: 130px;
+    }
+
+    .h2_drag{
+        font-size: 22px;
+        margin-left: -22px;
+    }
    
-    
-    
+    .slide_container{
+        margin-left: -50px;
+    }
+    #prev_slide_dragon {
+        position: absolute;
+        left: 14px;
+    }
+    #next_slide_dragon{
+        right:24px
+    }
 }
