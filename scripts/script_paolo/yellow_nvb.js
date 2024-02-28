@@ -12,10 +12,22 @@ function changeDisplay() {
   let isShowed = search_input.style.display === "none";
   let opacity = body.classList;
   let showCloseBtn = closeBtn.style.display === "none";
-  let smartphoneQueries = window.matchMedia("(max-width: 430px)");
+  let desktopQueries = window.matchMedia("(min-width: 1024px)");
   let tabletQueries = window.matchMedia("(max-width: 768px)");
+  let smartphoneQueries = window.matchMedia("(max-width: 430px)");
 
   if (
+    desktopQueries.matches &&
+    isShowed &&
+    opacity.value === "" &&
+    showCloseBtn
+  ) {
+    leftElements.style.marginRight = "0";
+    search_input.style.display = "block";
+    opacity.value = "bodyOpacity";
+    closeBtn.style.display = "block";
+    console.log("Desktop");
+  } else if (
     smartphoneQueries.matches &&
     isShowed &&
     opacity.value === "" &&
@@ -23,7 +35,7 @@ function changeDisplay() {
   ) {
     leftElements.style.marginRight = "0";
     search_input.style.display = "block";
-    search_input.style.width = "255px";
+    search_input.style.width = "250px";
     opacity.value = "bodyOpacity";
     closeBtn.style.display = "block";
     logo.style.display = "none";

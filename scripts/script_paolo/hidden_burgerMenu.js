@@ -7,11 +7,14 @@ const secondaryBurgerToggle = document.querySelector("burger_menu_Btn_2");
 
 function handleBurgerMenuDisplay() {
   let burgerMenuDisplay = burgerMenu.style.display === "none";
+  let opacity = body.classList;
 
-  if (burgerMenuDisplay) {
+  if (burgerMenuDisplay && opacity.value === "") {
     burgerMenu.style.display = "flex";
+    opacity.value = "bodyOpacity";
   } else {
     burgerMenu.style.display = "none";
+    opacity.value = "";
   }
 }
 
