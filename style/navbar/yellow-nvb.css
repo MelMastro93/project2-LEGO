@@ -523,7 +523,6 @@
 
 @media screen and (max-width: 974px) {
   .yellow_navbar {
-    align-items: end;
     background-color: white;
     border-bottom: 2px solid rgb(255, 207, 0);
   }
@@ -540,6 +539,7 @@
 
   .burger_container {
     display: flex;
+    margin-top: 20px;
   }
 
   .yellow_navbar_lego_head_btn {
@@ -563,4 +563,12 @@
   #slides-container {
     width: fit-content;
   }
+
+  .shop-icon,
+  .yellow_navbar_lego_head_btn,
+  .heart-btn {
+    display: none;
+  }
+
+
 }
