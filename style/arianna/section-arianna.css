@@ -504,7 +504,7 @@
 @media screen and (max-width: 768px) {
 
     .background-arianna {
-        margin-top: 100px;
+        padding-top: 100px;
     }
 
     .whole-first-sec {
@@ -657,10 +657,6 @@
 
 @media screen and (max-width: 500px) {
 
-    .background-arianna {
-        margin-top: 100px;
-    }
-
     .text-over-lego-insiders {
         height: fit-content;
         width: 40%;
@@ -692,12 +688,7 @@
         width: 150%;
         display: flex;
     }
-
-
-
-
 }
-
 
 
 /* MEDIA QUERIES  : PHONE*/
@@ -706,7 +697,7 @@
     .background {
         width: 100%;
         height: 100%;
-        margin-top: 55px;
+        padding-top: 100px;
     }
 
     .compra-ora-3images::-webkit-scrollbar {
@@ -747,9 +738,6 @@
         margin-top: -190px;
     }
 
-    .megapolis {
-        transform: translateY(10px);
-    }
 
     #left-arrow,
     #right-arrow {
@@ -769,10 +757,11 @@
     }
 
     .header-first-section {
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 20px;
         margin-left: 40px;
         margin-top: 30px;
+        margin-bottom: 5px;
     }
 
     .whole-first-sec #left-arrow {
