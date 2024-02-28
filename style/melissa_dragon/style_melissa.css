@@ -128,7 +128,7 @@
 }
 
 
-.btn {
+.btn_dragon_slide {
     background-color: rgb(250, 117, 15);
     border: none;
     width: 38px;
@@ -137,18 +137,18 @@
     margin-top: 150px;
 }
 
-.btn:hover {
+.btn_dragon_slide:hover {
     background-color: black;
     fill: white;
 
 }
 
-#left {
+#prev_slide_dragon {
     position: absolute;
     left: 8px;
 }
 
-#right {
+#next_slide_dragon {
     position: absolute;
     right: -20px;
     transform: rotate(180deg);
