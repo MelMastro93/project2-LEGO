@@ -19,10 +19,6 @@ html {
   background-color: #FFE6E5;
 }
 
-a {
-  pointer-events: none;
-}
-
 .prova-overflowone {
   overflow: hidden;
 }
