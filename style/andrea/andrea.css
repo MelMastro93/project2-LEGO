@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    margin: 30px 0px 30px 0px;
+    background-color: white;
 }
 
 .main-container {
@@ -94,6 +96,7 @@
     min-height: 280px;
     max-height: 280px;
     width: 100%;
+    background-color: white;
     border: 1px solid #E0E0E0;
 }
 
@@ -230,11 +233,12 @@
 
 .bot-container {
     width: 80vw;
+    background-color: white;
 }
 
 .suggestion {
     font-size: 25px;
-    margin: 40px 0px 20px;
+    margin: 40px 0px 25px;
 }
 
 .bot-slider-container {
@@ -281,9 +285,9 @@
 .cinema-card {
     flex-shrink: 0;
     width: calc(25% - 10px);
-    height: 500px;
+    height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }
@@ -356,4 +360,179 @@
         margin: 8px;
         width: calc(30vw - 1rem);
     }
-} 
+}
+
+    @media screen and (max-width: 768px) {
+        .slogan {
+            position: absolute;
+            left: 4%;
+            top: 18%;
+            width: 40%;
+            height: 222px;
+            gap: 20px;
+        }
+        
+        .slogan h4 {
+            font-size: 20px;
+        }
+        
+        .slogan p {
+            margin-top: 14px;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+        
+        .slogan button {
+            border: none;
+            height: 40px;
+            width: 130px;
+            color: white;
+            background-color: black;
+        }
+
+        .cinema-card{
+            justify-content: flex-start;
+            height: 350px;
+        }
+        .bot-slider-container {
+            width: 90%;
+        }
+        .bot-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .suggestion {
+            align-self: flex-start;
+            margin-left: 5%;
+        }
+
+        
+
+        .cinema-card-description h5 {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .cinema-card-description p {
+            font-size: 12px;
+        }
+
+        .cinema-card-description {
+            
+            gap: 10px;
+        }
+        .cinema-card-description a {
+            font-size: 14px;
+        }
+
+        .top-slider-container{
+            padding: 23px
+        }
+
+        .top-slider-container h4{
+            margin-left: 10px;
+            font-size: 30px;
+        }
+
+        .card-preview {
+            width: 400px;
+            min-height: 400px;
+
+        }
+        .card-preview img {
+            width: 80%;
+        }
+
+    }
+
+    @media screen and (max-width: 375px) {
+        .slogan {
+            position: absolute;
+            left: 4%;
+            top: 18%;
+            width: 40%;
+            height: max-content;
+            gap: 20px;
+        }
+        
+        .slogan h4 {
+            font-size: 12px;
+        }
+        
+        .slogan p {
+            margin: 4px 0px;
+            font-size: 10px;
+        }
+        
+        .slogan button {
+            border: none;
+            height: 17px;
+            width: 58px;
+            font-size: 8px;
+            color: white;
+            background-color: black;
+            margin-top: -20px;
+        }
+
+        .cinema-card{
+            justify-content: flex-start;
+            height: 350px;
+            width: 250px;
+        }
+        .bot-slider-container {
+            width: 90%;
+        }
+        .bot-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .suggestion {
+            align-self: flex-start;
+            margin-left: 5%;
+        }
+
+        
+
+        .cinema-card-description h5 {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .cinema-card-description p {
+            font-size: 12px;
+        }
+
+        .cinema-card-description {
+            
+            gap: 10px;
+        }
+        .cinema-card-description a {
+            font-size: 14px;
+        }
+
+        .top-slider-container{
+            padding: 0px 0px 0px 23px;
+        }
+
+        .top-slider-container h4{
+            margin-left: 10px;
+            font-size: 30px;
+        }
+
+        .card-preview {
+            width: 250px;
+            min-height: 250px;
+
+        }
+        .card-preview img {
+            width: 80%;
+        }
+        .card {
+            margin-right: 20px;
+        }
+
+    }
