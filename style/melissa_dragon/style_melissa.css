@@ -212,9 +212,8 @@
 /* svg cuore */
 .card_heart {
     position: relative;
-    bottom: 132px;
-    right: 300px;
-    width: 500px
+    bottom: 150px;
+    left: -310px;
 }
 
 .card_span_news {
