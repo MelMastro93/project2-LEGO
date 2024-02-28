@@ -2,12 +2,13 @@ const initSliderone = () => {
     const chevron = document.querySelectorAll('.carousel .chevron');
     const container = document.querySelector('.carousel .cards-container');
     
-    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+    const maxScrollLeft = container.scrollWidth -container.clientWidth;
     
     chevron.forEach(button => {
         button.addEventListener('click', ()=> {
             const direction = button.id === "left-chevron" ? -1 : 1;
             const scrollAmount = container.clientWidth * direction;
+            console.log(direction)
             container.scrollBy({ left: scrollAmount, behavior: 'smooth'  })
         })
     })
