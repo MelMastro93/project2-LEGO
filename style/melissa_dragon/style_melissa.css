@@ -177,7 +177,7 @@
     background-color: rgba(0, 0, 0, 0.788);
 }
 
-.dragon_h2 {
+.dragon_h2  h2{
     padding-top: 36px;
     padding-bottom: 24px;
     padding-left: 116px;
@@ -325,7 +325,17 @@
         width: 100%;
     }
 
-    .responsive_dragon {
+  .card_img_container{
+    width: 80%;
+    height: 250px;
+  }
+
+  .card_img_container img{
+    width: 80%;
+    height: 100%;
+  }
+
+    /* .responsive_dragon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -386,7 +396,7 @@
         width: 100%;
     }
 
-    .h2_drag {
+    .dragon_h2  h2 {
         font-size: large;
         margin-bottom: -12px;
         margin-left: -104px;
@@ -397,6 +407,7 @@
 
     .dragon_carousel {
         display: flex;
+        justify-content: flex-start;
         flex-wrap: nowrap;
         width: 100%;
     }
@@ -462,61 +473,58 @@
         border-radius: 6px;
         left: 55px;
 
-    }
+    } */
 
     
     
 }
 
 
-@media screen and (max-width: 768px){
-    .dragon_description_container {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        bottom: -8px;
-        left: 66px;
+ @media screen and (max-width: 768px){
+    .dragon_description_container{
+        bottom: 50px;
+        width: 100%;
+
+        
     }
     .dragon_description_container h2{
         font-size: 20px;
         
     }
-    .span_description{
-        width: 300px;
-        font-size: small;
-    }
-
+    
     .dragon_btn_container {
-        margin-top:6px;
-        padding-bottom: 45px;
-    }
- 
-    .dragon_btn1{
-        font-size: 13px;
-        padding: 10px; 
-        width: 130px;
-        bottom: 55px;
+        width: 50%;
+        margin-top: 0;
+        
     }
 
-    .dragon_btn2{
-        font-size: 13px;
-        padding: 10px;
-        width: 130px;
+    .dragon_btn1, .dragon_btn2{
+       height:30px;
+       font-size: 11px;
+       width: 200px;
     }
 
-    .h2_drag{
+    .span_description{
+        width: 400px;
+    }
+    
+    .dragon_h2 h2{
         font-size: 22px;
-        margin-left: -22px;
+        padding-left: 100px;
     }
-   
     .slide_container{
-        margin-left: -50px;
+        margin-left: -100px;
+    }
+    .dragon_carousel{
+        width: 85%;
     }
     #prev_slide_dragon {
         position: absolute;
-        left: 14px;
+        left: 60px;
     }
     #next_slide_dragon{
         right:24px
-    }
+    } 
+   
 }
+
