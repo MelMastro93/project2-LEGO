@@ -563,12 +563,4 @@
   #slides-container {
     width: fit-content;
   }
-
-  .shop-icon,
-  .yellow_navbar_lego_head_btn,
-  .heart-btn {
-    display: none;
-  }
-
-
 }

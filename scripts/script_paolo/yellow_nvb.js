@@ -14,8 +14,8 @@ function changeDisplay() {
   let showCloseBtn = closeBtn.style.display === "none";
   let desktopQueries = window.matchMedia("(min-width: 1024px)");
   let tabletQueries = window.matchMedia("(max-width: 768px)");
-  let smartphoneQueries = window.matchMedia("(max-width: 430px)");
-
+  let smartphoneLargeQueries = window.matchMedia("(max-width: 430px)");
+  let smartphoneMediumQueries = window.matchMedia("(max-width: 380px)");
   if (
     desktopQueries.matches &&
     isShowed &&
@@ -26,9 +26,20 @@ function changeDisplay() {
     search_input.style.display = "block";
     opacity.value = "bodyOpacity";
     closeBtn.style.display = "block";
-    console.log("Desktop");
   } else if (
-    smartphoneQueries.matches &&
+    smartphoneMediumQueries.matches &&
+    isShowed &&
+    opacity.value === "" &&
+    showCloseBtn
+  ) {
+    leftElements.style.marginRight = "0";
+    search_input.style.display = "block";
+    search_input.style.width = "200px";
+    opacity.value = "bodyOpacity";
+    closeBtn.style.display = "block";
+    logo.style.display = "none";
+  } else if (
+    smartphoneLargeQueries.matches &&
     isShowed &&
     opacity.value === "" &&
     showCloseBtn
