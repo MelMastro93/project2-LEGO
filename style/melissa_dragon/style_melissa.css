@@ -385,7 +385,7 @@
     .h2_drag {
         font-size: large;
         margin-bottom: -12px;
-        margin-left: -7px;
+        margin-left: -44px;
     }
 
     .dragon_carousel {
@@ -413,17 +413,18 @@
     }
 
     .card_span_news {
-        right: 60px;
+        right:85px;
         font-size: small;
     }
 
+
     .card_span_esclusive {
-        right: 55px;
+        right: 75px;
         font-size: small;
     }
 
     .card_span_hardToFind {
-        right: 25px;
+        right: 50px;
         font-size: small;
     }
 
@@ -445,6 +446,7 @@
         background-color: rgb(127, 19, 27);
         border: 2px solid rgb(127, 19, 27);
         border-radius: 6px;
+        left: 55px;
 
     }
 
