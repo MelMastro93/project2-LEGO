@@ -373,6 +373,11 @@
         font-weight: bolder;
     }
 
+    .buttons_dragon_responsive {
+        display: flex;
+        width: 100%;
+    }
+
     .slide_container {
         display: flex;
         width: 100%;
