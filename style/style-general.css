@@ -15,6 +15,6 @@
   font-family: 'Cera Pro';
 }
 
-.prova-overflowone {
-  overflow-x: hidden;
+html {
+  background-color: #FFE6E5;
 }
