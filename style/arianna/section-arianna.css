@@ -1,6 +1,6 @@
 .background-arianna {
     width: 100%;
-    margin-top: 100px;
+    padding-top: 100px;
     background-color: #FFE6E5;
     /* font-weight: bolder; */
     display: flex;
@@ -23,15 +23,14 @@
     justify-content: center;
     flex-direction: row;
     overflow-x: scroll;
-    margin: 0px 80px 0px 80px;
 }
 
 .compra-ora-3images {
     width: 100%;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     overflow-x: hidden;
     padding: 20px;
     gap: 25px;
@@ -179,7 +178,7 @@
     border-radius: 50%;
     padding: 8px;
     cursor: pointer;
-    left: 1940px;
+    right: 40px;
     top: 35%;
 }
 
@@ -419,8 +418,60 @@
     display: none;
 }
 
+@media screen and (max-width: 1500px) {
+    .compra-ora-3images {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
 
-@media screen and (max-width: 990px) {
+    .compra-ora-3images::-webkit-scrollbar {
+        display: block;
+        padding: 25px;
+        height: 6px;
+        margin: 20px;
+    }
+
+    #left-arrow,
+    #right-arrow {
+        display: block;
+        opacity: 100%;
+    }
+
+    .whole-first-sec #left-arrow {
+        top: 36%;
+        left: 40px;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .whole-first-sec #right-arrow {
+        right: 0px;
+        top: 36%;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-track {
+        background-color: rgba(169, 169, 169, 0.515);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb {
+        background-color: rgba(37, 37, 37, 0.727);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb:hover {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .compra-ora-3images {
+        justify-content: flex-start;
+    }
+
+
     .text-over-lego-insiders {
         height: fit-content;
         width: 40%;
@@ -456,25 +507,6 @@
         margin-top: 100px;
     }
 
-    .compra-ora-3images::-webkit-scrollbar {
-        display: block;
-        padding: 25px;
-        height: 6px;
-        margin: 20px;
-    }
-
-    .compra-ora-3images::-webkit-scrollbar-track {
-        background-color: rgba(169, 169, 169, 0.515);
-    }
-
-    .compra-ora-3images::-webkit-scrollbar-thumb {
-        background-color: rgba(37, 37, 37, 0.727);
-    }
-
-    .compra-ora-3images::-webkit-scrollbar-thumb:hover {
-        background-color: black;
-    }
-
     .whole-first-sec {
         margin: 0px 70px 0px 20px;
     }
@@ -496,10 +528,6 @@
 
     .description-first-section {
         margin-top: -130px;
-    }
-
-    .megapolis {
-        transform: translateY(10px);
     }
 
     #left-arrow,
