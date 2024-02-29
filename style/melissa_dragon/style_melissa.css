@@ -529,8 +529,17 @@
         .dragon_card {
             padding-left: 0px;
         }
+        .card_span_news{
+            right: 90px;
+        }
 
+        .card_span_esclusive{
+            right: 85px;
+        }
 
+        .card_span_hardToFind{
+            right: 50px;
+        }
         /* .container_dragon_carousel{
         margin-left:0px;
     }
