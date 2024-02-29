@@ -22,7 +22,7 @@ const prezziMenu = document.querySelector(".price_list_container");
 const merchMenu = document.querySelector(".merchandising_list_container");
 const interessiMenu = document.querySelector(".interests_list_container");
 const pickAndBuildMenu = document.querySelector(".pickAndBuild_list_container");
-
+const logoGetBack = document.querySelector("#lego_nvb_logo");
 /*------------------------------- DISCOVER SUB MENU IDENTIFIER ------------------------------- */
 
 const ourValueBtn = document.querySelector("#ourValue");
@@ -170,6 +170,9 @@ hiddenNvb_close_btn.addEventListener("click", () => {
   closeMenu();
 });
 
+logoGetBack.addEventListener("click", () => {
+  closeMenu();
+});
 /*--------------------------------- BUY SUB-MENU FUNCTIONS ------------------------------------- */
 
 function openThemeMenu() {
