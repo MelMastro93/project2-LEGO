@@ -32,31 +32,35 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 180px;
-    left: 100px;
+    width: 30%;
+    margin: 200px 0px 0px 200px;
+
 
 }
 
 .dragon_description_container h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
+    word-spacing: 5px;
 }
 
 .span_description {
-    font-size: 18px;
-    width: 600px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    line-height: 30px;
+    word-spacing: 2px;
 }
 
 .dragon_btn_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     margin-top: 35px;
     margin-bottom: 20px;
-    margin-right: 290px;
+    width: 700px;
+
 }
 
 .dragon_btn1 {
@@ -177,7 +181,7 @@
     background-color: rgba(0, 0, 0, 0.788);
 }
 
-.dragon_h2  h2{
+.dragon_h2 h2 {
     padding-top: 36px;
     padding-bottom: 24px;
     padding-left: 116px;
@@ -294,114 +298,240 @@
     border-color: 2px solid rgb(127, 19, 27);
 }
 
-@media screen and (max-width: 375px) {
-    .dragon_section {
-        width: 100%
+
+@media screen and (max-width: 1440px) {
+
+    .dragon_description_container {
+        width: 40%;
+        margin: 100px 0px 0px 150px;
     }
 
-    .dragon_banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    .dragon_description_container h2 {
+        font-size: 25px;
+        font-weight: bolder;
+        word-spacing: 5px;
     }
 
-    .dragon_image h2,
-    .btn,
+    .span_description {
+        font-size: 18px;
+    }
+
+    .dragon_btn1,
     .dragon_btn2 {
-        display: none;
+        font-size: 14px;
     }
 
-    .dragon_image img {
-        display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .dragon_description_container {
+        width: 30%;
+        margin: 60px 0px 0px 80px;
+        
+    }
+    .dragon_btn_container {
+        margin-top: 10px;
+        width: 500px;
     }
 
-    .dragon_image_smartphone {
-        display: initial;
-
+    .dragon_description_container h2 {
+        font-size: 20px;
+        font-weight: bolder;
+        word-spacing: 5px;
+        padding-bottom: 5px;
     }
 
-    .dragon_image_smartphone img {
-        width: 100%;
+    .span_description {
+        font-size: 14px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .dragon_description_container {
+        width:90%;
+        margin: 40px 0px 0px 60px;
     }
 
-  .card_img_container{
-    width: 80%;
-    height: 250px;
-  }
-
-  .card_img_container img{
-    width: 80%;
-    height: 100%;
-  }
-
-    /* .responsive_dragon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .dragon_description_container h2 {
+        font-size: 20px;
+        font-weight: bolder;
+        word-spacing: 5px;
+        padding-bottom: 5px;
     }
 
-
-    .h2_responsive {
-        padding-top: 20px;
-        font-size: small;
+    .span_description {
+        font-size: 14px;
     }
 
-    .span_responsive {
-        display: flex;
-        justify-content: center;
-        margin-top: 8px;
+    .dragon_btn1,
+    .dragon_btn2 {
+        font-size: 12px;
+        height: 30px;
+    }
+    .dragon_btn_container {
+        transform: translateX(-200px);
+        width: 600px;
+    }
+    
+   .dragon_btn_container button.dragon_btn1 {
+        margin-left: 200px;
         padding: 20px;
-        text-align: center;
+    }
+
+    .span_description {
+        width: 400px;
+    }
+
+    .dragon_h2 h2 {
+        font-size: 22px;
+    }
+
+        /* .slide_container{
+        margin-left: -100px;
+    } */
+        .dragon_carousel {
+            width: 100%;
+        }
+
+        #prev_slide_dragon {
+            position: absolute;
+            left: 60px;
+        }
+
+        #next_slide_dragon {
+            right: 24px
+        }
 
     }
 
-    button#left_responsive {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        background-color: black;
-        width: 150px;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        padding: 15px;
-        margin: 10px;
-        font-weight: bolder;
-    }
+    @media screen and (max-width: 375px) {
+        .dragon_section {
+            width: 100%
+        }
 
-    button#right_responsive {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        background-color: black;
-        width: 150px;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        padding: 15px;
-        margin: 10px;
-        font-weight: bolder;
-    }
+        .dragon_banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .buttons_dragon_responsive {
-        display: flex;
-        width: 90%;
-    }
+        .dragon_image h2,
+        .btn,
+        .dragon_btn2 {
+            display: none;
+        }
 
-    .slide_container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+        .dragon_image img {
+            display: none;
+        }
 
-    .dragon_h2  h2 {
-        font-size: large;
-        margin-bottom: -12px;
-        margin-left: -104px;
-    }
-    .container_dragon_carousel{
+        .dragon_image_smartphone {
+            display: initial;
+
+        }
+
+        .dragon_image_smartphone img {
+            width: 100%;
+        }
+
+
+        .responsive_dragon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        .h2_responsive {
+            padding-top: 20px;
+            font-size: small;
+        }
+
+        .span_responsive {
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        button#left_responsive {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            background-color: black;
+            width: 150px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 15px;
+            margin: 10px;
+            font-weight: bolder;
+        }
+
+        button#right_responsive {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            background-color: black;
+            width: 150px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 15px;
+            margin: 10px;
+            font-weight: bolder;
+        }
+
+        .buttons_dragon_responsive {
+            display: flex;
+            width: 90%;
+        }
+
+        .slide_container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .dragon_h2 h2 {
+            font-size: large;
+            margin-bottom: -12px;
+            margin-left: -104px;
+        }
+
+        .container_dragon_carousel {
+            margin-left: 0px;
+            padding-left: 15px;
+        }
+
+        .card_content {
+            padding-left: 10px;
+        }
+
+        .card_img_container {
+            width: 100%;
+            height: 250px;
+        }
+
+        .item_description,
+        .card_btn {
+            width: 250px;
+        }
+
+        .card_img_container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .dragon_card {
+            padding-left: 0px;
+        }
+
+
+        /* .container_dragon_carousel{
         margin-left:0px;
     }
 
@@ -473,58 +603,7 @@
         border-radius: 6px;
         left: 55px;
 
-    } */
-
-    
-    
-}
-
-
- @media screen and (max-width: 768px){
-    .dragon_description_container{
-        bottom: 50px;
-        width: 100%;
-
-        
-    }
-    .dragon_description_container h2{
-        font-size: 20px;
-        
-    }
-    
-    .dragon_btn_container {
-        width: 50%;
-        margin-top: 0;
-        
-    }
-
-    .dragon_btn1, .dragon_btn2{
-       height:30px;
-       font-size: 11px;
-       width: 200px;
-    }
-
-    .span_description{
-        width: 400px;
-    }
-    
-    .dragon_h2 h2{
-        font-size: 22px;
-        padding-left: 100px;
-    }
-    .slide_container{
-        margin-left: -100px;
-    }
-    .dragon_carousel{
-        width: 85%;
-    }
-    #prev_slide_dragon {
-        position: absolute;
-        left: 60px;
-    }
-    #next_slide_dragon{
-        right:24px
     } 
-   
-}
+  */
 
+    }
