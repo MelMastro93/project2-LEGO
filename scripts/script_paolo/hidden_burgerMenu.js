@@ -36,11 +36,13 @@ function getBackToMenu() {
     hamburgerDiscoverMenu.style.display = "none";
     hamburgerHelpMenu.style.display = "none";
     getBackBtnSVG.style.display = "none";
+    hamburgerSetPerTemaMenu.style.display = "none";
   } else {
     hamburgerBuyMenu.style.display = "none";
     hamburgerDiscoverMenu.style.display = "none";
     hamburgerHelpMenu.style.display = "none";
     getBackBtnSVG.style.display = "block";
+    hamburgerSetPerTemaMenu.style.display = "none";
   }
 }
 
@@ -112,6 +114,49 @@ hamburgerDiscoverBtn.addEventListener("click", () => {
 hamburgerHelpBtn.addEventListener("click", () => {
   openHamHelpMenu();
 });
+
+//HAMBURGER SECONDARY SUBMENU IDENTIFIER
+
+const hamburgerMenuTitleSectionBtn = document.querySelector(
+  ".hamburgerMenuTitleSection"
+);
+const hamburgerSetPerTemaBTn = document.querySelector("#hamburgerSetPerTema");
+const hamburgerSetPerTemaMenu = document.querySelector(
+  ".hamburger_theme_list_container"
+);
+
+//HAMBURGER SECONDARY SUBMENU FUNCTION
+
+function openThemeSubMenu() {
+  let hamburgerSetPerTemaMenuDisplay =
+    hamburgerSetPerTemaMenu.style.display === "none";
+
+  if (hamburgerSetPerTemaMenuDisplay) {
+    hamburgerSetPerTemaMenu.style.display = "block";
+  } else {
+    hamburgerSetPerTemaMenu.style.display = "none";
+  }
+}
+
+function getBackToSubMenu() {
+  let hamBuyMenuDisplay = hamburgerBuyMenu.style.display === "block";
+  let hamDiscoverMenuDisplay = hamburgerDiscoverMenu.style.display === "block";
+  let hamHelpMenuDisplay = hamburgerHelpMenu.style.display === "block";
+  if (hamBuyMenuDisplay || hamDiscoverMenuDisplay || hamHelpMenuDisplay) {
+    hamburgerSetPerTemaMenu.style.display = "none";
+  } else {
+    hamburgerSetPerTemaMenu.style.display = "none";
+  }
+}
+
+hamburgerSetPerTemaBTn.addEventListener("click", () => {
+  openThemeSubMenu();
+});
+
+hamburgerMenuTitleSectionBtn.addEventListener("click", () => {
+  getBackToSubMenu();
+});
+
 // HAMBURGER TOGGLE FUNCTION
 
 function handleBurgerMenuDisplay() {

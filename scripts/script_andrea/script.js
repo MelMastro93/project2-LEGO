@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chevron.forEach(button => {
             button.addEventListener('click', ()=> {
                 const direction = button.id === "left-chevron" ? -1 : 1;
-                const scrollAmount = container.clientWidth * direction;
+                const scrollAmount = container.clientWidth * direction + 50;
                 container.scrollBy({ left: scrollAmount, behavior: 'smooth'  })
             })
         })

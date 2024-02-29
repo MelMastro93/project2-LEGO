@@ -160,7 +160,7 @@
     width: 100%;
     overflow-x: scroll;
     height: auto;
-    
+    padding-right: 25px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -427,8 +427,7 @@
     align-items: baseline;
     overflow-x: scroll;
     gap: 14px;
-    padding-right: 5px;
-    padding: 5px;
+    padding-right: 8px;
 }
 
 .bot-slider-container {
