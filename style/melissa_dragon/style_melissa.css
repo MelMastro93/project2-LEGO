@@ -384,6 +384,7 @@
 
     .dragon_h2 h2 {
         font-size: 22px;
+        padding-left: 74px;
     }
 
         /* .slide_container{
@@ -395,7 +396,6 @@
 
         #prev_slide_dragon {
             position: absolute;
-            left: 60px;
         }
 
         #next_slide_dragon {
@@ -499,7 +499,7 @@
         .dragon_h2 h2 {
             font-size: large;
             margin-bottom: -12px;
-            margin-left: -104px;
+            margin-left: -58px;
         }
 
         .container_dragon_carousel {
@@ -529,8 +529,26 @@
         .dragon_card {
             padding-left: 0px;
         }
+        .card_span_news{
+            right: 90px;
+        }
 
+        .card_span_esclusive{
+            right: 85px;
+        }
 
+        .card_span_hardToFind{
+            right: 50px;
+        }
+
+        #prev_slide_dragon{
+           left: -11px;
+           top:-50px;
+        }
+        #next_slide_dragon{
+            right:-22px;
+            top: -57px;
+        }
         /* .container_dragon_carousel{
         margin-left:0px;
     }
