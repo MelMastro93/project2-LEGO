@@ -427,8 +427,7 @@
     align-items: baseline;
     overflow-x: scroll;
     gap: 14px;
-    padding-right: 5px;
-    padding: 5px;
+    padding-right: 8px;
 }
 
 .bot-slider-container {
