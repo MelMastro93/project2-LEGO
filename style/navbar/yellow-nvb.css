@@ -363,10 +363,14 @@
   margin-right: 10px;
 }
 
+
+/*--------------BURGER MENU---------------*/
+
 .burger_hiddenMenu_smartphone_container {
   display: flex;
   flex-direction: column;
   min-width: 375px;
+  height: 100vh;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -398,6 +402,8 @@
 }
 
 .burgerHiddenMenuButton {
+  display: flex;
+  align-items: center;
   padding: 10px;
   margin-left: 10px;
   background-color: inherit;
@@ -405,6 +411,13 @@
   font-family: "Cera Pro";
   font-weight: 700;
   font-size: large;
+  cursor: pointer;
+}
+
+.burgerHiddenMenuButtonSVG {
+  transform: rotate(180deg);
+  padding: 4px;
+  margin-right: 8px;
 }
 
 .burgerHiddenMenuButtonX {
@@ -450,32 +463,37 @@
   padding: 5px;
 }
 
-.burger_hiddenMenu_list li:nth-child(5) span,
-.burger_hiddenMenu_list li:nth-child(6) span,
-.burger_hiddenMenu_list li:nth-child(7) span,
-.burger_hiddenMenu_list li:nth-child(8) span,
-.burger_hiddenMenu_list li:nth-child(9) span {
+.burger_hiddenMenu {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.burger_hiddenMenu li:nth-child(5) span,
+.burger_hiddenMenu li:nth-child(6) span,
+.burger_hiddenMenu li:nth-child(7) span,
+.burger_hiddenMenu li:nth-child(8) span,
+.burger_hiddenMenu li:nth-child(9) span {
   margin-left: 20px;
 }
 
-.burger_hiddenMenu_list li:nth-child(1),
-.burger_hiddenMenu_list li:nth-child(2),
-.burger_hiddenMenu_list li:nth-child(3),
-.burger_hiddenMenu_list li:nth-child(4) {
+.burger_hiddenMenu li:nth-child(1),
+.burger_hiddenMenu li:nth-child(2),
+.burger_hiddenMenu li:nth-child(3),
+.burger_hiddenMenu li:nth-child(4) {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px 12px 20px;
   font-weight: bold;
-  pointer-events: none;
   list-style: none;
   border-bottom: 0.8px solid rgb(224, 224, 224);
-
 }
 
-.burger_hiddenMenu_list li:nth-child(5),
-.burger_hiddenMenu_list li:nth-child(6),
-.burger_hiddenMenu_list li:nth-child(9) {
+
+.burger_hiddenMenu li:nth-child(5),
+.burger_hiddenMenu li:nth-child(6),
+.burger_hiddenMenu li:nth-child(9) {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -486,8 +504,8 @@
   padding: 12px 20px 12px 20px;
 }
 
-.burger_hiddenMenu_list li:nth-child(7),
-.burger_hiddenMenu_list li:nth-child(8) {
+.burger_hiddenMenu li:nth-child(7),
+.burger_hiddenMenu li:nth-child(8) {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -506,13 +524,148 @@
 }
 
 
-.burger_hiddenMenu_list li:nth-child(2) svg,
-.burger_hiddenMenu_list li:nth-child(3) svg,
-.burger_hiddenMenu_list li:nth-child(4) svg {
+.burger_hiddenMenu li:nth-child(2) svg,
+.burger_hiddenMenu li:nth-child(3) svg,
+.burger_hiddenMenu li:nth-child(4) svg {
   margin-right: 20px;
   padding: 5px;
 }
 
+/*-------------- HAMBURGER BUY MENU -------------------------------*/
+
+.hamburger_menu_buy {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease-in-out;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.hamburger_menu_buy li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburger_menu_buy a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_buy svg {
+  margin-right: 20px;
+}
+
+/*------------------ HAMBURGER DISCOVER MENU ---------------------------*/
+
+.hamburger_menu_discover {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
+.hamburger_menu_discover li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburger_menu_discover a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_discover svg {
+  margin-right: 20px;
+}
+
+/*------------------ HAMBURGER DISCOVER MENU ---------------------------*/
+
+.hamburger_menu_help {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.hamburger_menu_help li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburger_menu_help a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_help svg {
+  margin-right: 20px;
+}
 
 /* -------------------------MEDIA QUERIES------------------------ */
 @media screen and (max-width: 1324px) {}
