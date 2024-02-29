@@ -160,7 +160,7 @@
     width: 100%;
     overflow-x: scroll;
     height: auto;
-    
+    padding-right: 25px;
 }
 
 .carousel::-webkit-scrollbar {
