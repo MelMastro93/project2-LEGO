@@ -1,0 +1,900 @@
+.background-arianna {
+    width: 100%;
+    padding-top: 100px;
+    background-color: #FFE6E5;
+    /* font-weight: bolder; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.whole-first-sec {
+    position: relative;
+    width: 100%;
+    margin: 0px 80px 0px 80px;
+}
+
+.container-compra-ora {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.compra-ora-3images {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 20px;
+    gap: 25px;
+}
+
+.container-compra-ora::-webkit-scrollbar {
+    display: none;
+    width: 0%;
+}
+
+#img-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-first-section {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    padding-top: 50px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+.flowers-img,
+.megapolis-img,
+.piantine-img {
+    width: 100%;
+}
+
+.img-first {
+    width: 570px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: center;
+    transition: all .4s ease-in-out;
+    transition-duration: .5s;
+}
+
+.description-first-section>h3,
+.description-first-section>p,
+.description-first-section>a {
+    padding-top: 30px;
+}
+
+.description-first-section>h3 {
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.description-first-section>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.description-first-section>a:hover {
+    text-decoration-line: underline;
+}
+
+.description-first-section>svg {
+    margin-top: 8px;
+    width: 16px;
+    position: relative;
+    transform: translate(2px, 6px);
+}
+
+.description-first-section>p {
+    margin: -8px;
+    padding: 25px 8px 12px 8px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.whole-first-sec #left-arrow {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    top: 41%;
+    left: 40px;
+    display: none;
+    opacity: 0%;
+}
+
+
+.whole-first-sec #right-arrow {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    right: 30px;
+    top: 41%;
+    display: none;
+    opacity: 0%;
+}
+
+/* second section Carosello Set in evidenza */
+
+.description-carosello {
+    width: 15px;
+}
+
+.img-example p {
+    background-color: rgb(255, 207, 0);
+    width: fit-content;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.valutation-stars {
+    display: flex;
+    width: 70px;
+    gap: 2px;
+}
+
+/* --------------- SLIDER  -------------- */
+.slider-set {
+    position: relative;
+    width: 100%;
+}
+
+
+.slider-set #slider-right-button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    right: 40px;
+    top: 35%;
+}
+
+.slider-set #slider-left-button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #edd5d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    left: 30px;
+    top: 35%;
+}
+
+#slider-right-button:hover,
+#slider-left-button:hover {
+    border: 1px solid black;
+    background-color: white;
+    filter: invert(100%);
+    border: 1px solid black;
+    background-color: white;
+    filter: invert(100%);
+}
+
+
+/* CONTAINER DELLE CARDS DEL CAROSELLO !!!! */
+.card-set {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 35px;
+    margin-left: 110px;
+    margin-right: 110px;
+    overflow-x: scroll;
+}
+
+.whole-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-example {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-img-png {
+    transition: all .4s ease-in-out;
+    transition-duration: .5s;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img-png {
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+    width: 90%;
+    /* transition-delay: 0.05s; */
+    transition-duration: 0.5s;
+}
+
+.card-img-png:hover {
+    transform: scale(1.115);
+}
+
+.heart {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 22px;
+    border-radius: 50%;
+}
+
+.slider-set h3 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    padding-top: 30px;
+    letter-spacing: 0.5px;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+.description-carosello {
+    width: 400px;
+    height: 250px;
+    padding: 8px;
+    margin: 8px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.description-carosello button {
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 34, 47);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 350px;
+}
+
+.description-carosello button:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(226, 34, 47);
+}
+
+.description-carosello p {
+    font-size: 16px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* CUSTOMIZING THE SCROLLBAR  */
+
+.card-set::-webkit-scrollbar {
+    padding: 15px;
+    height: 6px;
+}
+
+.card-set::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+
+}
+
+.card-set::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+    padding: 15px;
+    height: 6px;
+}
+
+.card-set::-webkit-scrollbar-track {
+    background-color: rgba(169, 169, 169, 0.515);
+}
+
+.card-set::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.727);
+}
+
+.card-set::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+.card-set #left-arrow {
+    display: block;
+}
+
+.card-set #right-arrow {
+    display: block;
+}
+
+/* third section  Iscriviti a LEGO Insiders*/
+
+.lego-insiders {
+    width: 100%;
+    position: relative;
+    background-color: #FFE6E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lego-insiders .img-insiders {
+    width: 100%;
+    position: relative;
+    background-color: #FFE6E5;
+    margin-top: 50px;
+}
+
+
+.text-over-lego-insiders {
+    height: fit-content;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    /* padding: 200px 300px; */
+    bottom: 120px;
+    left: 120px;
+}
+
+.sub-insiders-h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-insiders-p {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.diventa-socio-button {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 14px 48px 14px 24px;
+    background: #000;
+    color: #fff;
+    margin: 0px;
+    border: none;
+    margin-top: 20px;
+}
+
+.diventa-socio-button svg {
+    filter: invert(100%);
+    position: absolute;
+    transform: translate(12px, 0px);
+}
+
+.diventa-socio-button:hover {
+    background-color: #fff;
+    color: black;
+
+    svg {
+        filter: invert(0%);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .compra-ora-3images {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+
+    .compra-ora-3images::-webkit-scrollbar {
+        display: block;
+        padding: 25px;
+        height: 6px;
+        margin: 20px;
+    }
+
+    #left-arrow,
+    #right-arrow {
+        display: block;
+        opacity: 100%;
+    }
+
+    .whole-first-sec #left-arrow {
+        top: 36%;
+        left: 40px;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .whole-first-sec #right-arrow {
+        right: 0px;
+        top: 36%;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-track {
+        background-color: rgba(169, 169, 169, 0.515);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb {
+        background-color: rgba(37, 37, 37, 0.727);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb:hover {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .compra-ora-3images {
+        justify-content: flex-start;
+    }
+
+
+    .text-over-lego-insiders {
+        height: fit-content;
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        justify-content: center;
+        /* padding: 200px 300px; */
+        bottom: 60px;
+        left: 50px;
+    }
+
+    .sub-insiders-h2 {
+        font-size: 25px;
+    }
+
+    .sub-insiders-p {
+        font-size: 15px;
+    }
+
+
+}
+
+/* MEDIA QUERIES  : TABLET*/
+
+@media screen and (max-width: 768px) {
+
+    .background-arianna {
+        padding-top: 100px;
+    }
+
+    .whole-first-sec {
+        margin: 0px 70px 0px 20px;
+    }
+
+    .container-compra-ora {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .compra-ora-3images {
+        overflow-x: scroll;
+        height: 100%;
+        overflow-y: hidden;
+        gap: 20px;
+    }
+
+    .header-first-section {
+        margin-top: 30px;
+    }
+
+    .description-first-section {
+        margin-top: -130px;
+    }
+
+    #left-arrow,
+    #right-arrow {
+        display: block;
+        opacity: 100%;
+    }
+
+    #img-item {
+        margin-bottom: 40px;
+    }
+
+
+    .img-first {
+        width: 380px;
+        height: 410px;
+    }
+
+    .header-first-section {
+        font-size: 30px;
+        padding-top: 20px;
+        margin-left: 50px;
+    }
+
+    .whole-first-sec #left-arrow {
+        top: 36%;
+        left: 40px;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .whole-first-sec #right-arrow {
+        right: 0px;
+        top: 36%;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    /* second section tablet  */
+    .card-set {
+        gap: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .img-example {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .slider-set h3 {
+        font-size: 30px;
+        margin: 50px 0px 12px 30px;
+    }
+
+    #polaroid-card {
+        margin-left: 12px;
+    }
+
+    #avengers-card {
+        margin-right: 12px;
+    }
+
+    .slider-set #slider-left-button {
+        left: 20px;
+
+    }
+
+    .slider-set #slider-right-button {
+        left: 690px;
+
+    }
+
+    /* third section 768px */
+    .lego-insiders {
+
+        width: 100%;
+        position: relative;
+        background-color: #FFE6E5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffe6e5;
+        overflow: hidden;
+    }
+
+    .lego-insiders .img-insiders {
+        width: 140%;
+        margin-top: 50px;
+    }
+
+    .lego-insiders .tempsnip {
+        display: none;
+    }
+
+    .text-over-lego-insiders {
+        height: fit-content;
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        justify-content: center;
+        /* padding: 200px 300px; */
+        bottom: 100px;
+        left: 30px;
+    }
+
+    .sub-insiders-h2 {
+        font-size: 20px;
+    }
+
+    .sub-insiders-p {
+        font-size: 14px;
+    }
+
+
+}
+
+/* MEDIA QUERIES  : 500px*/
+
+@media screen and (max-width: 500px) {
+
+    .text-over-lego-insiders {
+        height: fit-content;
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        /* padding: 200px 300px; */
+        bottom: 60px;
+        left: 10px;
+    }
+
+    .sub-insiders-h2 {
+        font-size: 22px;
+    }
+
+    .sub-insiders-p {
+        font-size: 14px;
+    }
+
+    .diventa-socio-button {
+        width: 200px;
+    }
+
+    .lego-insiders .img-insiders {
+        width: 150%;
+        display: flex;
+    }
+}
+
+
+/* MEDIA QUERIES  : PHONE*/
+
+@media screen and (max-width: 375px) {
+    .background {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+    }
+
+    .compra-ora-3images::-webkit-scrollbar {
+        padding: 15px;
+        height: 6px;
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-track {
+
+        background-color: rgba(169, 169, 169, 0.515);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb {
+        background-color: rgba(37, 37, 37, 0.727);
+    }
+
+    .compra-ora-3images::-webkit-scrollbar-thumb:hover {
+        background-color: black;
+    }
+
+    .whole-first-sec {
+        margin: 0px 70px 0px 20px;
+    }
+
+    .container-compra-ora {
+        margin: -20px 20px 0px 20px;
+    }
+
+    .compra-ora-3images {
+        overflow-x: scroll;
+        height: 100%;
+        overflow-y: hidden;
+        gap: 20px;
+    }
+
+
+    .description-first-section {
+        margin-top: -190px;
+    }
+
+
+    #left-arrow,
+    #right-arrow {
+        display: block;
+        opacity: 100%;
+        width: 35px;
+        height: 35px;
+    }
+
+    #img-item {
+        margin-bottom: 25px;
+    }
+
+    .img-first {
+        width: 300px;
+        height: 410px;
+    }
+
+    .header-first-section {
+        font-size: 20px;
+        padding-top: 20px;
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .whole-first-sec #left-arrow {
+        top: 34%;
+        left: 40px;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .whole-first-sec #right-arrow {
+        right: 0px;
+        top: 34%;
+        display: block;
+        opacity: 100%;
+        /* display: none; */
+    }
+
+    .description-first-section>h3,
+    .description-first-section>p,
+    .description-first-section>a {
+        padding-top: 25px;
+    }
+
+    .description-first-section>p {
+        margin: -8px;
+        padding: 20px 4px 6px 4px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    /* second section phone  */
+    .card-set {
+        gap: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .img-example {
+        margin-left: 12px;
+        margin-right: 12px;
+
+        width: 250px;
+        height: 250px;
+    }
+
+    #polaroid-card {
+        margin-left: 12px;
+    }
+
+    #avengers-card {
+        margin-right: 12px;
+    }
+
+    #p-polaroid {
+        margin-bottom: -26px;
+    }
+
+    .slider-set h3 {
+        font-size: 22px;
+        margin: 50px 0px 12px 30px;
+    }
+
+    .slider-set #slider-left-button {
+        left: 20px;
+
+    }
+
+    .slider-set #slider-right-button {
+        left: 310px;
+    }
+
+    .description-carosello {
+        width: 250px;
+        height: 200px;
+        padding: 8px;
+        margin: 8px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .description-carosello button {
+        width: 220px;
+    }
+
+
+    .lego-insiders {
+      
+        background-color: #F6ADCD;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lego-insiders .img-insiders {
+        width: 280%;
+        margin-top: 0px;
+        display: flex;
+        align-self: end;
+        object-fit: contain;
+    }
+
+    .text-over-lego-insiders {
+
+        width: 80%;
+        height: 80%;
+        display: none;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .sub-insiders-h2 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 20px;
+        align-self: center;
+        justify-self: center;
+        width: 300px;
+    }
+
+    .sub-insiders-p {
+        font-size: 14px;
+        padding: 10px 15px 5px 15px;
+        align-self: center;
+        justify-self: center;
+        width: 330px;
+    }
+
+    .diventa-socio-button {
+        margin-bottom: 20px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+}

@@ -1,0 +1,148 @@
+.white-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  transition: top 0.4s ease-in-out;
+  font-family: Cera Pro;
+  font-size: small;
+  z-index: 1;
+  background-color: white;
+}
+
+.areaGiochi a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background: rgb(171, 217, 255);
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 24px;
+  padding: 4px 8px 4px 8px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.areaGiochi a:hover {
+  background: white;
+}
+
+.left-arrow {
+  margin-right: 8px;
+  transform: rotate(180deg);
+}
+
+/* CAROSELLO */
+
+.navbar_carousel {
+  display: flex;
+  align-items: center;
+}
+
+#slides-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 405px;
+}
+
+#slides-container span {
+  display: none;
+  padding: 16px 8px 16px 8px;
+}
+
+#slides-container span:nth-child(1) {
+  display: block;
+}
+
+.slides-link {
+  margin-left: 10px;
+}
+
+.carousel-btn-prev,
+.carousel-btn-next {
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  background: none;
+}
+
+.carousel-left-arrow {
+  transform: rotate(180deg);
+}
+
+/* RIGHT */
+
+.white-navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.lego-head {
+  padding: 0px 4px 0px 0px;
+  cursor: pointer;
+}
+
+.separator {
+  padding: 0 15px 0 0;
+}
+
+.placeholder-lego {
+  padding: 0px 4px 0px 0px;
+  cursor: pointer;
+}
+
+.whiteNvb_text_element {
+  padding: 0px 16px 0px 0px;
+  cursor: pointer;
+}
+
+.whiteNvb_close_btn {
+  display: none;
+}
+
+/* -------------------------- MEDIA QUERIES -------------------------------- */
+
+@media screen and (max-width: 1324px) {
+  .whiteNvb_text_element {
+    display: none;
+  }
+
+  .separator {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 974px) {
+  .white-navbar {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: small;
+    z-index: 1;
+  }
+
+  .areaGiochi {
+    display: none;
+  }
+
+  .white-navbar-right .lego-head,
+  .whiteNvb_text_element,
+  .separator,
+  .white-navbar-right .placeholder-lego {
+    display: none;
+  }
+
+  .whiteNvb_close_btn {
+    display: block;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+}

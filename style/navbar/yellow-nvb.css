@@ -1,0 +1,805 @@
+.yellow_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 55px;
+  transition: top 0.4s ease-in-out;
+  padding: 10px 36px 10px 36px;
+  background: rgb(255, 207, 0);
+  z-index: 4;
+}
+
+.yellow_navbar_left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  z-index: 7;
+}
+
+.yellow_navbar_right {
+  display: flex;
+  align-items: center;
+}
+
+.burger_container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 26px;
+}
+
+.burger_container span {
+  margin-top: 8px;
+}
+
+.burger_menu_Btn_1 {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.burgerMenuButtonstyles__iconContainer {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 3px;
+  border-radius: 3px;
+}
+
+.burgerMenuButtonstyles__icon {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-top: 1px;
+  border-radius: 3px;
+}
+
+#lego_nvb_logo {
+  cursor: pointer;
+}
+
+#navigation_btn1,
+#navigation_btn2,
+#navigation_btn3 {
+  width: 100px;
+  height: 36px;
+  border: none;
+  margin-left: 64px;
+  color: black;
+  background: inherit;
+  z-index: 7;
+  cursor: pointer;
+  font-family: Cera Pro;
+  font-weight: 550;
+  font-size: medium;
+}
+
+#navigation_btn1:hover,
+#navigation_btn2:hover,
+#navigation_btn3:hover {
+  text-decoration: underline 2px;
+}
+
+/*SEARCHBAR*/
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.search_btn {
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.search_btn svg {
+  position: relative;
+  top: 2px;
+}
+
+.search_input {
+  display: none;
+  width: 200px;
+  height: 35px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  transition: width 0.5s ease-in-out;
+}
+
+.close_btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.close_btn svg {
+  position: relative;
+  top: 3px;
+  left: 1px;
+  height: 12px;
+}
+
+.heart-btn {
+  position: relative;
+  top: 3px;
+  right: 4px;
+  background-color: inherit;
+  border-style: none;
+}
+
+.yellow_navbar_lego_head_btn {
+  display: none;
+  background-color: inherit;
+  border: none;
+}
+
+.shop-icon {
+  color: black;
+  text-decoration: none;
+}
+
+.heart-btn,
+.shop-icon {
+  padding-left: 16px;
+}
+
+/*HIDDEN NAVBAR*/
+
+.hiddenNvb_close_btn {
+  display: none;
+  position: relative;
+  bottom: 100px;
+  left: 460px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+}
+
+.navbar-hidden {
+  display: none;
+  min-width: 650px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  padding: 130px 0px 40px 145px;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  font-family: font-base;
+  animation: transition 500ms ease;
+}
+
+@keyframes transition {
+  0% {
+    left: -650px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.navbar-hidden a {
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.navbar-hidden li {
+  list-style: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navbar-hidden li:hover {
+  text-decoration: underline;
+}
+
+.navbar-hidden-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sub-menu {
+  display: block;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-left: 1px solid lightgrey;
+  height: 100%;
+}
+
+.sub-menu-title {
+  display: inline-block;
+  text-wrap: nowrap;
+  padding: 0 0 10px 45px;
+}
+
+/*MENU BUY*/
+
+.menu-buy {
+  /* display: none; */
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+}
+
+.buy_list {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+}
+
+.theme_list_container {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  height: min-content;
+  padding: 0 36px 0 40px;
+}
+
+.theme_list {
+  display: flex;
+  padding-left: 40px;
+}
+
+.sub-theme-list-container {
+  text-wrap: nowrap;
+  padding: 0 20px 0 0;
+}
+
+.age_list_container {
+  display: none;
+  padding: 0 36px 0 10px;
+}
+
+.age_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.price_list_container {
+  display: none;
+  padding: 0 36px 0 40px;
+}
+
+.price_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.merchandising_list_container {
+  display: none;
+  padding: 0 36px 0 40px;
+}
+
+.merchandising_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.interests_list_container {
+  display: none;
+  padding: 0 36px 0 40px;
+}
+
+.interests_list {
+  display: flex;
+  padding-left: 40px;
+}
+
+.sub-interest-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pickAndBuild_list_container {
+  display: none;
+  padding: 0 36px 0 40px;
+}
+
+.pickAndBuild_list {
+  padding-left: 40px;
+}
+
+/*MENU DISCOVER*/
+
+.menu-discover {
+  /* display: none; */
+  text-wrap: nowrap;
+  margin-right: 10px;
+}
+
+.discover_list {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+}
+
+.ourValue_list_container {
+  display: none;
+  margin: 0 0 0 40px;
+  padding: 0 36px 0 40px;
+}
+
+.ourApp_list_container {
+  display: none;
+  margin: 0 0 0 40px;
+  padding: 0 36px 0 40px;
+}
+
+.ourMagazine_list_container {
+  display: none;
+  margin: 0 0 0 40px;
+  padding: 0 36px 0 40px;
+}
+
+/*MENU HELP*/
+
+.menu-help {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+}
+
+
+/*--------------BURGER MENU---------------*/
+
+.burger_hiddenMenu_smartphone_container {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  font-family: font-base;
+  animation: transition 500ms ease;
+}
+
+@keyframes transition {
+  0% {
+    left: -350px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.burger_hiddenMenu_Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 52px;
+  border-bottom: 3px solid rgb(255, 207, 0);
+}
+
+.burgerHiddenMenuButton {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: inherit;
+  border: none;
+  font-family: "Cera Pro";
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+}
+
+.burgerHiddenMenuButtonSVG {
+  transform: rotate(180deg);
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.burgerHiddenMenuButtonX {
+  height: 100%;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+  background-color: inherit;
+  border-left: 1px solid rgb(224, 224, 224);
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.burgerMenuAreaGiochi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 39px;
+  margin: 22px;
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  background: rgb(171, 217, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  border-bottom: 1.6px solid rgba(48, 85, 181, 0.25);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bolder;
+
+  color: black;
+  cursor: pointer;
+}
+
+.burgerMenuAreaGiochi a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.burgerMenuAreaGiochi svg {
+  padding: 5px;
+}
+
+.burger_hiddenMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger_hiddenMenu li:nth-child(5) span,
+.burger_hiddenMenu li:nth-child(6) span,
+.burger_hiddenMenu li:nth-child(7) span,
+.burger_hiddenMenu li:nth-child(8) span,
+.burger_hiddenMenu li:nth-child(9) span {
+  margin-left: 20px;
+}
+
+.burger_hiddenMenu li:nth-child(1),
+.burger_hiddenMenu li:nth-child(2),
+.burger_hiddenMenu li:nth-child(3),
+.burger_hiddenMenu li:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px 12px 20px;
+  font-weight: bold;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+
+.burger_hiddenMenu li:nth-child(5),
+.burger_hiddenMenu li:nth-child(6),
+.burger_hiddenMenu li:nth-child(9) {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  padding: 12px 20px 12px 20px;
+}
+
+.burger_hiddenMenu li:nth-child(7),
+.burger_hiddenMenu li:nth-child(8) {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 12px 0px;
+  list-style: none;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+
+.burger_hiddenMenu li:nth-child(2) svg,
+.burger_hiddenMenu li:nth-child(3) svg,
+.burger_hiddenMenu li:nth-child(4) svg {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.hamburgerMenuDecoration {
+
+  padding-bottom: 10px;
+  background-color: rgb(0, 109, 183);
+  font-family: "Cera Pro";
+  font-weight: 600;
+  color: white;
+}
+
+.hamburgerMenuDecoration span {
+  border-bottom: 1px solid white;
+  margin-left: 20px;
+}
+
+/*-------------- HAMBURGER BUY MENU -------------------------------*/
+
+.hamburger_menu_buy {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease-in-out;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.hamburger_menu_buy li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+  font-family: "Cera Pro";
+  font-weight: 500;
+}
+
+.hamburger_menu_buy a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_buy svg {
+  margin-right: 20px;
+}
+
+/*------------------ HAMBURGER DISCOVER MENU ---------------------------*/
+
+.hamburger_menu_discover {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
+.hamburger_menu_discover li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburger_menu_discover a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_discover svg {
+  margin-right: 20px;
+}
+
+/*------------------ HAMBURGER DISCOVER MENU ---------------------------*/
+
+.hamburger_menu_help {
+  position: absolute;
+  top: 52px;
+  width: 379px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  margin-right: 10px;
+  animation: hamburgerMenuTransition 400ms ease;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.hamburger_menu_help li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburger_menu_help a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.hamburger_menu_help svg {
+  margin-right: 20px;
+}
+
+/*BUY SUB MENU*/
+.hamburger-sub-menu {
+  display: block;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.hamburger-sub-menu-title {
+  display: inline-block;
+  text-wrap: nowrap;
+  padding: 0 0 10px 45px;
+  position: relative;
+}
+
+.hamburger_theme_list_container {
+  display: none;
+  position: absolute;
+  top: 52px;
+  overflow: hidden;
+  width: 379px;
+  height: 100vh;
+  background-color: white;
+  animation: hamburgerMenuTransition 400ms ease;
+}
+
+@keyframes hamburgerMenuTransition {
+  0% {
+    left: -379px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.hamburger_theme_list_container li {
+  display: flex;
+  align-items: center;
+  font-family: "Cera Pro";
+  font-weight: 500;
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  border-bottom: 0.8px solid rgb(224, 224, 224);
+}
+
+.hamburgerMenuTitleSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.hamburgerMenuTitleSection span {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.hamburger_theme_list_title {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  background-color: rgb(0, 109, 183);
+  color: white;
+}
+
+.hamburger_theme_list_title span {
+  margin-left: 40px;
+  border-bottom: 1px solid white;
+}
+
+.hamburger_sub-theme-list-container {
+  text-wrap: nowrap;
+  padding: 0 20px 0 0;
+}
+
+/* -------------------------MEDIA QUERIES------------------------ */
+
+@media screen and (max-width: 974px) {
+  .yellow_navbar {
+    background-color: white;
+    border-bottom: 2px solid rgb(255, 207, 0);
+  }
+
+  .yellow_navbar_left {
+    z-index: 6;
+  }
+
+  #navigation_btn1,
+  #navigation_btn2,
+  #navigation_btn3 {
+    display: none;
+  }
+
+  .burger_container {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .yellow_navbar_lego_head_btn {
+    display: block;
+    margin: 0 20px 0 20px;
+  }
+
+  .shop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .yellow_navbar_left {
+    margin: 0;
+    z-index: 1;
+  }
+
+  #slides-container {
+    width: fit-content;
+  }
+}
