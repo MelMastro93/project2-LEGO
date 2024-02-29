@@ -142,6 +142,10 @@
     font-size: 14px;
 }
 
+.footer_input:focus {
+    outline: none;
+}
+
 .footer_button {
     background-color: rgb(253, 128, 36);
     height: 52px;
