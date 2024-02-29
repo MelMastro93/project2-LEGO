@@ -55,6 +55,7 @@
         border-radius: 0 6px 6px 0;
         height: 54px;
         width: 100%;
+        cursor: text;
     }
 
     .footer_h3_marketing {
@@ -69,15 +70,41 @@
     }
 
     .footer_input {
-        height: 26px;
+        height: 100%;
+        width: 100%;
         padding-left: 18px;
         text-align: start;
         font-size: 14px;
+        background-color: white;
+
     }
+
+    .searchTransition {
+        height: 50%;
+        margin-top: 20px;
+    }
+
+    .footer_input:focus {
+        outline: none;
+    }
+
+    .footer_input_search_span {
+        position: absolute;
+        left: 40px;
+        font-size: 15px;
+    }
+
+    .spanTransition {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+
+
 
     .footer_button {
         height: 54px;
         width: 50px;
+        cursor: pointer;
     }
 
     .footer_button svg {
@@ -113,6 +140,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
     }
 
     .footer_h3 {
@@ -122,6 +150,7 @@
         max-width: 94%;
         font-size: 15px;
         margin-left: 10px;
+        cursor: pointer;
     }
 
     .footer_arrow {
@@ -142,7 +171,7 @@
     .footer_li {
         border-top: 1px solid rgb(224, 224, 224);
         margin-bottom: 0px;
-       
+
     }
 
     .footer_arrow_transform {

@@ -22,6 +22,7 @@
     color: white;
     padding: 0 0 22px 6px;
     font-size: 16px;
+    cursor: context-menu;
 }
 
 /* *FOOTER CONTAINER 1 */
@@ -122,6 +123,7 @@
     color: white;
     padding-bottom: 16px;
     font-size: 14px;
+    cursor: context-menu;
 }
 
 .footer_marketing label,
@@ -164,6 +166,7 @@
     color: white;
     padding-bottom: 16px;
     font-size: 14px;
+    cursor: context-menu;
 }
 
 .footer_social svg {
